@@ -188,7 +188,7 @@ def temp_segment(tt):
         return ""
     _, mn, mx = tt
     if mn is not None and mx is not None:
-        return f"{mx}℃/{mn}℃"
+        return f"{mx}℃｜{mn}℃"
     if mx is not None:
         return f"最高{mx}℃"
     if mn is not None:
@@ -208,7 +208,7 @@ def day_lines(day, generated_str):
     if day["weather"]:
         lines.append(f"天気：{day['weather']}")
     if day["slots"]:
-        lines.append("降水確率：" + "／".join(f"{label} {v}%" for label, v in day["slots"]))
+        lines.append("降水確率：" + "｜".join(f"{label} {v}%" for label, v in day["slots"]))
     elif day["pop"] is not None:
         lines.append(f"降水確率：{day['pop']}%")
     if day["wind"]:
@@ -222,9 +222,9 @@ def day_lines(day, generated_str):
             if mn is not None:
                 seg += f" 最低{mn}℃"
             segs.append(seg)
-        lines.append("気温：" + "／".join(segs))
+        lines.append("気温：" + "｜".join(segs))
     lines.append(SOURCE_LINE)
-    lines.append(f"生成：{generated_str}")
+    lines.append(f"更新：{generated_str}")
     return lines
 
 
@@ -349,14 +349,59 @@ h2{font-size:20px;font-weight:500;margin:0 0 12px}
   background:var(--primary-container);color:var(--on-primary-container);font-size:14px}
 .btn:hover{background:var(--primary);color:var(--on-primary)}
 ol{margin:0;padding-left:1.4em}
+ul{margin:0;padding-left:1.4em}
 .small{font-size:13px;color:var(--on-surface-variant)}
 a{color:var(--primary)}
+.sec{margin:26px 0 12px}
+.office{font-size:17px;font-weight:500;margin:20px 0 8px}
+.figure{max-width:100%;height:auto;background:#fff;border:1px solid var(--outline);border-radius:12px}
+.region{margin:0 0 16px}
+.region:last-child{margin-bottom:0}
+.region a{font-size:17px;font-weight:500;text-decoration:none}
+.region .members{color:var(--on-surface-variant);font-size:13px}
+.at{width:.95em;height:.95em;vertical-align:-.15em}
+@media (max-width:640px){
+  .area-name{flex-basis:100%}
+}
 """
 
 
+REGIONS = [
+    ("hokkaido", "北海道",
+     ["011000", "012000", "013000", "014030", "014100", "015000", "016000", "017000"],
+     "宗谷、上川・留萌、網走・北見・紋別、十勝、釧路・根室、胆振・日高、石狩・空知・後志、渡島・檜山"),
+    ("tohoku", "東北",
+     ["020000", "030000", "040000", "050000", "060000", "070000"],
+     "青森、岩手、宮城、秋田、山形、福島"),
+    ("kanto", "関東・甲信越",
+     ["080000", "090000", "100000", "110000", "120000", "130000", "140000", "150000", "190000", "200000"],
+     "茨城、栃木、群馬、埼玉、千葉、東京、神奈川、新潟、山梨、長野"),
+    ("tokai", "東海・北陸",
+     ["160000", "170000", "180000", "210000", "220000", "230000", "240000"],
+     "富山、石川、福井、岐阜、静岡、愛知、三重"),
+    ("kansai", "関西",
+     ["250000", "260000", "270000", "280000", "290000", "300000"],
+     "滋賀、京都、大阪、兵庫、奈良、和歌山"),
+    ("chugoku", "中国",
+     ["310000", "320000", "330000", "340000", "350000"],
+     "鳥取、島根、岡山、広島、山口"),
+    ("shikoku", "四国",
+     ["360000", "370000", "380000", "390000"],
+     "徳島、香川、愛媛、高知"),
+    ("kyushu", "九州・沖縄",
+     ["400000", "410000", "420000", "430000", "440000", "450000",
+      "460040", "460100", "471000", "472000", "473000", "474000"],
+     "福岡、佐賀、長崎、熊本、大分、宮崎、鹿児島、沖縄"),
+]
+
+FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfDXD4EkW81uoFn-BVUP8hcEKdRLjafR5m5csddDG-_DtGU8A/viewform"
+ISSUES_URL = "https://github.com/nidoneru/jma-weather-feed/issues"
+
+
 def render_index(area, grouped, sample, generated_str):
-    office_cards = []
-    for oc, areas in grouped:
+    grouped_map = dict(grouped)
+
+    def rows_html(areas):
         rows = []
         for code, name in areas:
             rows.append(
@@ -368,14 +413,30 @@ def render_index(area, grouped, sample, generated_str):
                 f'<a class="btn" href="json/{code}.json">JSON</a>'
                 "</div>"
             )
-        office_cards.append(
-            f'<section class="card"><h2>{xml_escape(area["offices"][oc]["name"])}</h2>'
-            + "".join(rows) + "</section>"
-        )
+        return "".join(rows)
+
+    region_index = "".join(
+        f'<p class="region"><a href="#region-{slug}">{xml_escape(rname)}</a><br>'
+        f'<span class="members">{xml_escape(members)}</span></p>'
+        for slug, rname, _codes, members in REGIONS
+    )
+    region_sections = []
+    for slug, rname, codes, _members in REGIONS:
+        parts = [f'<h2 class="sec" id="region-{slug}">{xml_escape(rname)}</h2>']
+        for oc in codes:
+            if oc not in grouped_map:
+                continue
+            parts.append(
+                f'<h3 class="office">{xml_escape(area["offices"][oc]["name"])}</h3>'
+                f'<section class="card">{rows_html(grouped_map[oc])}</section>'
+            )
+        region_sections.append("".join(parts))
+
     sample_html = ""
     if sample:
         sample_html = (
-            '<section class="card"><h2>表示例（東京地方）</h2>'
+            '<h2 class="sec">表示例（東京地方）</h2>'
+            '<section class="card">'
             f'<p class="sample-title">{xml_escape(sample[0])}</p>'
             f'<p class="sample-body">{xml_escape(sample[1])}</p></section>'
         )
@@ -385,36 +446,56 @@ def render_index(area, grouped, sample, generated_str):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>天気予報フィード</title>
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" href="favicon.png">
 <style>{INDEX_CSS}</style>
 </head>
 <body>
 <main>
 <h1>天気予報フィード</h1>
-<p class="lead">気象庁が発表する天気予報を、一次細分区域（全国142地点）ごとに iCal・RSS・JSON で配布しています。短期予報と週間予報を、短期優先でつないだ7日分です。1日3回（朝・昼・夕）更新します。</p>
-<p class="meta">生成：{generated_str}／{SOURCE_LINE}しています</p>
+<p class="lead">気象庁が発表する天気予報を、一次細分区域（全国142地点）ごとに iCal・RSS・JSON で配布しています。短期予報と週間予報を統合した7日分です（表示は短期優先）。1日3回（朝・昼・夕）更新予定です。</p>
+<p class="meta">更新：{generated_str}<br>{SOURCE_LINE}しています</p>
 {sample_html}
-<section class="card"><h2>カレンダーへの登録（Google カレンダー）</h2>
+<h2 class="sec">カレンダーへの登録（Google カレンダー）</h2>
+<section class="card">
 <ol>
-<li>下の地点一覧で、自分の地域の「iCal」リンクの URL をコピーします</li>
-<li>Google カレンダーの「設定」→「カレンダーを追加」→「URLで追加」に貼り付けます</li>
-<li>スマホのカレンダーアプリ（Google カレンダーと同期するもの）に自動で届きます</li>
+<li>下の地点一覧で、自分の地域の「iCal」の URL をコピーします</li>
+<li><a href="https://calendar.google.com/">Google カレンダー</a>の「設定」→「カレンダーを追加」→「URLで追加」に貼り付けます</li>
+<li>あとは、Google カレンダーと同期しているスマホのカレンダーアプリにも、自動で表示されます</li>
 </ol>
+<p>短い経路もあります。Google カレンダーの画面左側にある「他のカレンダー」の「＋」から「URLで追加」を選んでも登録できます。</p>
+<p><img class="figure" src="gcal-short-route.png" alt="Google カレンダーで「他のカレンダー」の「＋」を押し、「URLで追加」を選んで、URL を貼り付ける手順の図"></p>
+<p class="small">※ URLでの登録は、パソコンのブラウザからのみ行えます。スマホの Google カレンダーアプリからは登録できません。</p>
+<p class="small">スマホしかない場合は、ブラウザで PC 版サイトを表示すれば同じ画面で登録できます。Chrome（Android）は右上の「︙」メニューから「PC版サイト」にチェック、Safari（iPhone）はアドレスバーの「ぁあ」から「デスクトップ用Webサイトを表示」、Chrome（iPhone）は「…」メニューから「デスクトップサイトを表示」です。その状態で Google カレンダーを開いてください。画面は小さくて操作しづらいですが、登録だけならできます。</p>
 <p class="small">webcal のリンクは、対応アプリで開くとそのまま購読登録に進みます。iPhone・Mac のカレンダーは webcal、または iCal の URL を「新規照会カレンダー」に入力してください。</p>
 </section>
-<section class="card"><h2>RSS リーダーへの取り込み</h2>
-<ol>
+<h2 class="sec">RSS リーダーへの登録</h2>
+<section class="card">
+<ul>
 <li>1地点だけなら、その地点の「RSS」リンクをリーダーに登録します</li>
-<li>まとめて取り込むなら、<a href="feeds.opml">OPML ファイル</a>をリーダーに読み込ませます（予報区ごとのフォルダで入ります）</li>
-</ol>
+<li>まとめて登録するなら、<a href="feeds.opml">OPML ファイル</a>をリーダーに読み込ませます（予報区ごとのフォルダで入ります）</li>
+</ul>
 </section>
-<h2 style="margin:24px 0 12px">地点一覧</h2>
-{''.join(office_cards)}
-<section class="card"><h2>出典と免責</h2>
-<p>{SOURCE_LINE}しています。データは気象庁ホームページ（https://www.jma.go.jp/）で発表されたものです。</p>
+<h2 class="sec">地点一覧</h2>
+<section class="card">
+{region_index}
+</section>
+{''.join(region_sections)}
+<h2 class="sec">出典と免責</h2>
+<section class="card">
+<p>気象庁の天気予報データを加工して作成しています。データは気象庁ホームページ（https://www.jma.go.jp/）で発表されたものです。</p>
 <p>このサービスは個人が運営する非公式のものです。予報の正確性は保証しません。防災など重要な判断には、必ず気象庁の公式情報を確認してください。</p>
-<p class="small">問い合わせ・不具合の報告は <a href="https://github.com/nidoneru/jma-weather-feed/issues">GitHub Issues</a> へ。</p>
 </section>
+<h2 class="sec">問い合わせ</h2>
+<section class="card">
+<p>問い合わせは、次の方法で受け付けています。</p>
+<ul>
+<li>フォーム：<a href="{FORM_URL}">お問い合わせフォーム</a>（一番手軽です）</li>
+<li>メール：<span id="contact-mail"><noscript>aegithaloscaudatusjaponicus<svg class="at" viewBox="0 0 60 60" aria-hidden="true"><text x="2" y="46" font-size="50" fill="currentColor">@</text></svg>duck.com</noscript></span></li>
+<li>不具合の報告：<a href="{ISSUES_URL}">GitHub Issues</a> でも受け付けています</li>
+</ul>
+<p class="small">個人で運営しているため、返信にお時間をいただく場合があります。</p>
+</section>
+<script>(function(){{var u=['aegithalos','caudatus','japonicus'].join('');var a=u+String.fromCharCode(64)+['duck','com'].join('.');var s=document.getElementById('contact-mail');var l=document.createElement('a');l.href='mailto:'+a;l.textContent=a;s.textContent='';s.appendChild(l);}})();</script>
 </main>
 </body>
 </html>
@@ -481,9 +562,10 @@ def main():
             count += 1
     (out / "index.html").write_text(render_index(area, grouped, sample, generated_str), encoding="utf-8")
     (out / "feeds.opml").write_text(render_opml(area, grouped), encoding="utf-8")
-    favicon = ROOT / "favicon.svg"
-    if favicon.exists():
-        shutil.copy(favicon, out / "favicon.svg")
+    for asset in ("favicon.png", "gcal-short-route.png"):
+        f = ROOT / asset
+        if f.exists():
+            shutil.copy(f, out / asset)
     print(f"generated {count} areas")
     if data.unknown_codes:
         print(f"WARN unknown weather codes: {sorted(data.unknown_codes)}", file=sys.stderr)
