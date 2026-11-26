@@ -9,6 +9,7 @@
 """
 import argparse
 import json
+import shutil
 import sys
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -384,6 +385,7 @@ def render_index(area, grouped, sample, generated_str):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>天気予報フィード</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <style>{INDEX_CSS}</style>
 </head>
 <body>
@@ -479,6 +481,9 @@ def main():
             count += 1
     (out / "index.html").write_text(render_index(area, grouped, sample, generated_str), encoding="utf-8")
     (out / "feeds.opml").write_text(render_opml(area, grouped), encoding="utf-8")
+    favicon = ROOT / "favicon.svg"
+    if favicon.exists():
+        shutil.copy(favicon, out / "favicon.svg")
     print(f"generated {count} areas")
     if data.unknown_codes:
         print(f"WARN unknown weather codes: {sorted(data.unknown_codes)}", file=sys.stderr)
