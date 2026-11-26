@@ -360,7 +360,7 @@ a{color:var(--primary)}
 .region a{font-size:17px;font-weight:500;text-decoration:none}
 .region .members{color:var(--on-surface-variant);font-size:13px}
 .region .members a{font-size:13px;font-weight:400}
-.updated-when{font-size:26px;font-weight:500;margin:2px 0 10px}
+.updated-when{font-size:26px;font-weight:700;text-decoration:underline;margin:2px 0 10px}
 .note-list{margin:14px 0}
 .gap{margin-top:14px}
 .at{width:.95em;height:.95em;vertical-align:-.15em}
@@ -402,7 +402,7 @@ REGIONS = [
      [("徳島", "360000"), ("香川", "370000"), ("愛媛", "380000"), ("高知", "390000")]),
     ("kyushu", "九州・沖縄",
      ["400000", "410000", "420000", "430000", "440000", "450000",
-      "460040", "460100", "471000", "472000", "473000", "474000"],
+      "460100", "460040", "471000", "472000", "473000", "474000"],
      [("福岡", "400000"), ("佐賀", "410000"), ("長崎", "420000"), ("熊本", "430000"),
       ("大分", "440000"), ("宮崎", "450000"), ("鹿児島", "460100"), ("沖縄", "471000")]),
 ]
@@ -470,7 +470,7 @@ def render_index(area, grouped, sample, generated_str):
 <body>
 <main>
 <h1>天気予報フィード</h1>
-<p class="lead">気象庁が発表する天気予報を、一次細分区域（全国142地点）ごとに iCal・RSS・JSON で配布しています。短期予報と週間予報を統合した7日分です（表示は短期優先）。1日3回（朝・昼・夕）更新予定です。</p>
+<p class="lead">気象庁が発表する天気予報を、一次細分区域（全国142地点）ごとに iCal・RSS・JSON で配布しています。短期予報（今日〜明後日）と週間予報を統合した7日分です（表示は短期優先）。</p>
 {sample_html}
 <h2 class="sec">カレンダーへの登録（Google カレンダー）</h2>
 <section class="card">
@@ -481,7 +481,7 @@ def render_index(area, grouped, sample, generated_str):
 </ol>
 <p><img class="figure" src="gcal-short-route.png" alt="Google カレンダーで「他のカレンダー」の「＋」を押し、「URLで追加」を選んで、URL を貼り付ける手順の図"></p>
 <ol start="4">
-<li>URLの登録は、パソコンのブラウザからのみ行えます。スマホの Google カレンダーアプリからは登録できません。</li>
+<li>URLの登録は、パソコンのブラウザからのみ行えます。スマホの Google カレンダーアプリからは登録できません</li>
 </ol>
 <p class="small">スマホしかない場合は、ブラウザで PC 版サイトを表示すれば同じ画面で登録できます。</p>
 <ul class="small note-list">
@@ -501,9 +501,7 @@ def render_index(area, grouped, sample, generated_str):
 </section>
 <h2 class="sec">更新日時</h2>
 <section class="card">
-<p>このサイトとフィードのデータは</p>
 <p class="updated-when">{generated_str}</p>
-<p>1日3回（朝・昼・夕）、気象庁の発表に合わせて更新しています。</p>
 <p>各フィード（iCal・RSS・JSON）の末尾にも、同じ更新日時が入っています。</p>
 </section>
 <h2 class="sec">出典と免責</h2>
