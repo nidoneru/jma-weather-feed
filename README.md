@@ -16,7 +16,7 @@
 
 - `generate.py` が気象庁の予報 JSON（府県予報区ごと）を取得し、区域ごとに再構成します
 - 天気の文言は天気コード表（`data/weather_codes.json`）から組み立てます。気温の地点と区域の対応は `data/points.json`、週間予報の区域の対応は `data/weekly_areas.json` にあります
-- GitHub Actions が1日3回（5:45／11:45／17:45 JST）生成し、gh-pages ブランチへ公開します。生成に失敗した回は、公開物は前回のまま残ります
+- GitHub Actions が1日3回（5:43／11:43／17:43 JST）生成し、gh-pages ブランチへ公開します。生成に失敗した回は、公開物は前回のまま残ります
 
 ## 出典と免責
 
