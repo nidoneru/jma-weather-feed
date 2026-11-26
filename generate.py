@@ -407,7 +407,7 @@ REGIONS = [
       ("大分", "440000"), ("宮崎", "450000"), ("鹿児島", "460100"), ("沖縄", "471000")]),
 ]
 
-SAMPLE_STAMP = "2026年12月13日 23時45分"
+SAMPLE_STAMP = "2026年12月13日 23時43分"
 FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfDXD4EkW81uoFn-BVUP8hcEKdRLjafR5m5csddDG-_DtGU8A/viewform"
 ISSUES_URL = "https://github.com/nidoneru/jma-weather-feed/issues"
 
