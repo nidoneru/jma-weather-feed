@@ -1,0 +1,857 @@
+{
+ "11016": {
+  "area": "011000",
+  "name": "稚内",
+  "representative": true
+ },
+ "12442": {
+  "area": "012010",
+  "name": "旭川",
+  "representative": true
+ },
+ "13277": {
+  "area": "012020",
+  "name": "留萌",
+  "representative": true
+ },
+ "14163": {
+  "area": "016010",
+  "name": "札幌",
+  "representative": true
+ },
+ "15356": {
+  "area": "016020",
+  "name": "岩見沢",
+  "representative": true
+ },
+ "16217": {
+  "area": "016030",
+  "name": "倶知安",
+  "representative": true
+ },
+ "17112": {
+  "area": "013030",
+  "name": "紋別",
+  "representative": true
+ },
+ "17341": {
+  "area": "013010",
+  "name": "網走",
+  "representative": true
+ },
+ "17521": {
+  "area": "013020",
+  "name": "北見",
+  "representative": true
+ },
+ "18273": {
+  "area": "014010",
+  "name": "根室",
+  "representative": true
+ },
+ "19432": {
+  "area": "014020",
+  "name": "釧路",
+  "representative": true
+ },
+ "20432": {
+  "area": "014030",
+  "name": "帯広",
+  "representative": true
+ },
+ "21323": {
+  "area": "015010",
+  "name": "室蘭",
+  "representative": true
+ },
+ "22327": {
+  "area": "015020",
+  "name": "浦河",
+  "representative": true
+ },
+ "23232": {
+  "area": "017010",
+  "name": "函館",
+  "representative": true
+ },
+ "24217": {
+  "area": "017020",
+  "name": "江差",
+  "representative": true
+ },
+ "31111": {
+  "area": "020020",
+  "name": "むつ",
+  "representative": true
+ },
+ "31312": {
+  "area": "020010",
+  "name": "青森",
+  "representative": true
+ },
+ "31436": {
+  "area": "020010",
+  "name": "深浦",
+  "representative": false
+ },
+ "31461": {
+  "area": "020010",
+  "name": "弘前",
+  "representative": false
+ },
+ "31602": {
+  "area": "020030",
+  "name": "八戸",
+  "representative": true
+ },
+ "32126": {
+  "area": "050020",
+  "name": "鷹巣",
+  "representative": false
+ },
+ "32402": {
+  "area": "050010",
+  "name": "秋田",
+  "representative": true
+ },
+ "32596": {
+  "area": "050020",
+  "name": "横手",
+  "representative": true
+ },
+ "33071": {
+  "area": "030010",
+  "name": "二戸",
+  "representative": false
+ },
+ "33431": {
+  "area": "030010",
+  "name": "盛岡",
+  "representative": true
+ },
+ "33472": {
+  "area": "030020",
+  "name": "宮古",
+  "representative": true
+ },
+ "33877": {
+  "area": "030030",
+  "name": "大船渡",
+  "representative": true
+ },
+ "33911": {
+  "area": "030010",
+  "name": "一関",
+  "representative": false
+ },
+ "34216": {
+  "area": "040010",
+  "name": "古川",
+  "representative": false
+ },
+ "34292": {
+  "area": "040010",
+  "name": "石巻",
+  "representative": false
+ },
+ "34392": {
+  "area": "040010",
+  "name": "仙台",
+  "representative": true
+ },
+ "34461": {
+  "area": "040020",
+  "name": "白石",
+  "representative": true
+ },
+ "35052": {
+  "area": "060030",
+  "name": "酒田",
+  "representative": true
+ },
+ "35162": {
+  "area": "060040",
+  "name": "新庄",
+  "representative": true
+ },
+ "35426": {
+  "area": "060010",
+  "name": "山形",
+  "representative": true
+ },
+ "35552": {
+  "area": "060020",
+  "name": "米沢",
+  "representative": true
+ },
+ "36127": {
+  "area": "070010",
+  "name": "福島",
+  "representative": true
+ },
+ "36151": {
+  "area": "070020",
+  "name": "相馬",
+  "representative": false
+ },
+ "36361": {
+  "area": "070030",
+  "name": "若松",
+  "representative": true
+ },
+ "36476": {
+  "area": "070010",
+  "name": "郡山",
+  "representative": false
+ },
+ "36641": {
+  "area": "070030",
+  "name": "田島",
+  "representative": false
+ },
+ "36667": {
+  "area": "070010",
+  "name": "白河",
+  "representative": false
+ },
+ "36846": {
+  "area": "070020",
+  "name": "小名浜",
+  "representative": true
+ },
+ "40201": {
+  "area": "080010",
+  "name": "水戸",
+  "representative": true
+ },
+ "40341": {
+  "area": "080020",
+  "name": "土浦",
+  "representative": true
+ },
+ "41141": {
+  "area": "090020",
+  "name": "大田原",
+  "representative": true
+ },
+ "41277": {
+  "area": "090010",
+  "name": "宇都宮",
+  "representative": true
+ },
+ "42091": {
+  "area": "100020",
+  "name": "みなかみ",
+  "representative": true
+ },
+ "42251": {
+  "area": "100010",
+  "name": "前橋",
+  "representative": true
+ },
+ "43056": {
+  "area": "110020",
+  "name": "熊谷",
+  "representative": true
+ },
+ "43156": {
+  "area": "110030",
+  "name": "秩父",
+  "representative": true
+ },
+ "43241": {
+  "area": "110010",
+  "name": "さいたま",
+  "representative": true
+ },
+ "44132": {
+  "area": "130010",
+  "name": "東京",
+  "representative": true
+ },
+ "44172": {
+  "area": "130020",
+  "name": "大島",
+  "representative": true
+ },
+ "44263": {
+  "area": "130030",
+  "name": "八丈島",
+  "representative": true
+ },
+ "44301": {
+  "area": "130040",
+  "name": "父島",
+  "representative": true
+ },
+ "45148": {
+  "area": "120020",
+  "name": "銚子",
+  "representative": true
+ },
+ "45212": {
+  "area": "120010",
+  "name": "千葉",
+  "representative": true
+ },
+ "45401": {
+  "area": "120030",
+  "name": "館山",
+  "representative": true
+ },
+ "46106": {
+  "area": "140010",
+  "name": "横浜",
+  "representative": true
+ },
+ "46166": {
+  "area": "140020",
+  "name": "小田原",
+  "representative": true
+ },
+ "48156": {
+  "area": "200010",
+  "name": "長野",
+  "representative": true
+ },
+ "48331": {
+  "area": "200020",
+  "name": "軽井沢",
+  "representative": false
+ },
+ "48361": {
+  "area": "200020",
+  "name": "松本",
+  "representative": true
+ },
+ "48491": {
+  "area": "200020",
+  "name": "諏訪",
+  "representative": false
+ },
+ "48767": {
+  "area": "200030",
+  "name": "飯田",
+  "representative": true
+ },
+ "49142": {
+  "area": "190010",
+  "name": "甲府",
+  "representative": true
+ },
+ "49251": {
+  "area": "190020",
+  "name": "河口湖",
+  "representative": true
+ },
+ "50206": {
+  "area": "220030",
+  "name": "三島",
+  "representative": true
+ },
+ "50281": {
+  "area": "220020",
+  "name": "網代",
+  "representative": true
+ },
+ "50331": {
+  "area": "220010",
+  "name": "静岡",
+  "representative": true
+ },
+ "50456": {
+  "area": "220040",
+  "name": "浜松",
+  "representative": true
+ },
+ "50551": {
+  "area": "220040",
+  "name": "御前崎",
+  "representative": false
+ },
+ "50561": {
+  "area": "220020",
+  "name": "石廊崎",
+  "representative": false
+ },
+ "51106": {
+  "area": "230010",
+  "name": "名古屋",
+  "representative": true
+ },
+ "51331": {
+  "area": "230020",
+  "name": "豊橋",
+  "representative": true
+ },
+ "52146": {
+  "area": "210020",
+  "name": "高山",
+  "representative": true
+ },
+ "52586": {
+  "area": "210010",
+  "name": "岐阜",
+  "representative": true
+ },
+ "53061": {
+  "area": "240010",
+  "name": "四日市",
+  "representative": false
+ },
+ "53112": {
+  "area": "240010",
+  "name": "上野",
+  "representative": false
+ },
+ "53133": {
+  "area": "240010",
+  "name": "津",
+  "representative": true
+ },
+ "53378": {
+  "area": "240020",
+  "name": "尾鷲",
+  "representative": true
+ },
+ "54157": {
+  "area": "150040",
+  "name": "相川",
+  "representative": true
+ },
+ "54232": {
+  "area": "150010",
+  "name": "新潟",
+  "representative": true
+ },
+ "54421": {
+  "area": "150010",
+  "name": "津川",
+  "representative": false
+ },
+ "54501": {
+  "area": "150020",
+  "name": "長岡",
+  "representative": true
+ },
+ "54651": {
+  "area": "150030",
+  "name": "高田",
+  "representative": true
+ },
+ "54841": {
+  "area": "150020",
+  "name": "湯沢",
+  "representative": false
+ },
+ "55091": {
+  "area": "160020",
+  "name": "伏木",
+  "representative": true
+ },
+ "55102": {
+  "area": "160010",
+  "name": "富山",
+  "representative": true
+ },
+ "56052": {
+  "area": "170020",
+  "name": "輪島",
+  "representative": true
+ },
+ "56227": {
+  "area": "170010",
+  "name": "金沢",
+  "representative": true
+ },
+ "57066": {
+  "area": "180010",
+  "name": "福井",
+  "representative": true
+ },
+ "57121": {
+  "area": "180010",
+  "name": "大野",
+  "representative": false
+ },
+ "57248": {
+  "area": "180020",
+  "name": "敦賀",
+  "representative": true
+ },
+ "60131": {
+  "area": "250020",
+  "name": "彦根",
+  "representative": true
+ },
+ "60216": {
+  "area": "250010",
+  "name": "大津",
+  "representative": true
+ },
+ "61111": {
+  "area": "260020",
+  "name": "舞鶴",
+  "representative": true
+ },
+ "61286": {
+  "area": "260010",
+  "name": "京都",
+  "representative": true
+ },
+ "62078": {
+  "area": "270000",
+  "name": "大阪",
+  "representative": true
+ },
+ "63051": {
+  "area": "280020",
+  "name": "豊岡",
+  "representative": true
+ },
+ "63383": {
+  "area": "280010",
+  "name": "姫路",
+  "representative": false
+ },
+ "63518": {
+  "area": "280010",
+  "name": "神戸",
+  "representative": true
+ },
+ "63571": {
+  "area": "280010",
+  "name": "洲本",
+  "representative": false
+ },
+ "64036": {
+  "area": "290010",
+  "name": "奈良",
+  "representative": true
+ },
+ "64227": {
+  "area": "290020",
+  "name": "風屋",
+  "representative": true
+ },
+ "65042": {
+  "area": "300010",
+  "name": "和歌山",
+  "representative": true
+ },
+ "65356": {
+  "area": "300020",
+  "name": "潮岬",
+  "representative": true
+ },
+ "66186": {
+  "area": "330020",
+  "name": "津山",
+  "representative": true
+ },
+ "66408": {
+  "area": "330010",
+  "name": "岡山",
+  "representative": true
+ },
+ "67116": {
+  "area": "340020",
+  "name": "庄原",
+  "representative": true
+ },
+ "67401": {
+  "area": "340010",
+  "name": "福山",
+  "representative": false
+ },
+ "67437": {
+  "area": "340010",
+  "name": "広島",
+  "representative": true
+ },
+ "67511": {
+  "area": "340010",
+  "name": "呉",
+  "representative": false
+ },
+ "68022": {
+  "area": "320030",
+  "name": "西郷",
+  "representative": true
+ },
+ "68132": {
+  "area": "320010",
+  "name": "松江",
+  "representative": true
+ },
+ "68376": {
+  "area": "320020",
+  "name": "浜田",
+  "representative": true
+ },
+ "69076": {
+  "area": "310020",
+  "name": "米子",
+  "representative": true
+ },
+ "69122": {
+  "area": "310010",
+  "name": "鳥取",
+  "representative": true
+ },
+ "71066": {
+  "area": "360010",
+  "name": "池田",
+  "representative": false
+ },
+ "71106": {
+  "area": "360010",
+  "name": "徳島",
+  "representative": true
+ },
+ "71266": {
+  "area": "360020",
+  "name": "日和佐",
+  "representative": true
+ },
+ "72086": {
+  "area": "370000",
+  "name": "高松",
+  "representative": true
+ },
+ "73141": {
+  "area": "380020",
+  "name": "新居浜",
+  "representative": true
+ },
+ "73166": {
+  "area": "380010",
+  "name": "松山",
+  "representative": true
+ },
+ "73442": {
+  "area": "380030",
+  "name": "宇和島",
+  "representative": true
+ },
+ "74182": {
+  "area": "390010",
+  "name": "高知",
+  "representative": true
+ },
+ "74372": {
+  "area": "390020",
+  "name": "室戸岬",
+  "representative": true
+ },
+ "74516": {
+  "area": "390030",
+  "name": "清水",
+  "representative": true
+ },
+ "81071": {
+  "area": "350040",
+  "name": "萩",
+  "representative": true
+ },
+ "81286": {
+  "area": "350020",
+  "name": "山口",
+  "representative": true
+ },
+ "81428": {
+  "area": "350010",
+  "name": "下関",
+  "representative": true
+ },
+ "81481": {
+  "area": "350030",
+  "name": "柳井",
+  "representative": true
+ },
+ "82056": {
+  "area": "400020",
+  "name": "八幡",
+  "representative": true
+ },
+ "82136": {
+  "area": "400030",
+  "name": "飯塚",
+  "representative": true
+ },
+ "82182": {
+  "area": "400010",
+  "name": "福岡",
+  "representative": true
+ },
+ "82306": {
+  "area": "400040",
+  "name": "久留米",
+  "representative": true
+ },
+ "83051": {
+  "area": "440020",
+  "name": "中津",
+  "representative": true
+ },
+ "83137": {
+  "area": "440030",
+  "name": "日田",
+  "representative": true
+ },
+ "83216": {
+  "area": "440010",
+  "name": "大分",
+  "representative": true
+ },
+ "83401": {
+  "area": "440040",
+  "name": "佐伯",
+  "representative": true
+ },
+ "84072": {
+  "area": "420030",
+  "name": "厳原",
+  "representative": true
+ },
+ "84266": {
+  "area": "420020",
+  "name": "佐世保",
+  "representative": true
+ },
+ "84496": {
+  "area": "420010",
+  "name": "長崎",
+  "representative": true
+ },
+ "84536": {
+  "area": "420040",
+  "name": "福江",
+  "representative": true
+ },
+ "85116": {
+  "area": "410020",
+  "name": "伊万里",
+  "representative": true
+ },
+ "85142": {
+  "area": "410010",
+  "name": "佐賀",
+  "representative": true
+ },
+ "86111": {
+  "area": "430020",
+  "name": "阿蘇乙姫",
+  "representative": true
+ },
+ "86141": {
+  "area": "430010",
+  "name": "熊本",
+  "representative": true
+ },
+ "86467": {
+  "area": "430040",
+  "name": "人吉",
+  "representative": true
+ },
+ "86491": {
+  "area": "430030",
+  "name": "牛深",
+  "representative": true
+ },
+ "87041": {
+  "area": "450040",
+  "name": "高千穂",
+  "representative": true
+ },
+ "87141": {
+  "area": "450020",
+  "name": "延岡",
+  "representative": true
+ },
+ "87376": {
+  "area": "450010",
+  "name": "宮崎",
+  "representative": true
+ },
+ "87426": {
+  "area": "450030",
+  "name": "都城",
+  "representative": true
+ },
+ "87492": {
+  "area": "450010",
+  "name": "油津",
+  "representative": false
+ },
+ "88061": {
+  "area": "460010",
+  "name": "阿久根",
+  "representative": false
+ },
+ "88317": {
+  "area": "460010",
+  "name": "鹿児島",
+  "representative": true
+ },
+ "88442": {
+  "area": "460020",
+  "name": "鹿屋",
+  "representative": true
+ },
+ "88466": {
+  "area": "460010",
+  "name": "枕崎",
+  "representative": false
+ },
+ "88612": {
+  "area": "460030",
+  "name": "種子島",
+  "representative": true
+ },
+ "88837": {
+  "area": "460040",
+  "name": "名瀬",
+  "representative": true
+ },
+ "88971": {
+  "area": "460040",
+  "name": "沖永良部",
+  "representative": false
+ },
+ "91107": {
+  "area": "471020",
+  "name": "名護",
+  "representative": true
+ },
+ "91146": {
+  "area": "471030",
+  "name": "久米島",
+  "representative": true
+ },
+ "91197": {
+  "area": "471010",
+  "name": "那覇",
+  "representative": true
+ },
+ "92011": {
+  "area": "472000",
+  "name": "南大東",
+  "representative": true
+ },
+ "93041": {
+  "area": "473000",
+  "name": "宮古島",
+  "representative": true
+ },
+ "94017": {
+  "area": "474020",
+  "name": "与那国島",
+  "representative": true
+ },
+ "94081": {
+  "area": "474010",
+  "name": "石垣島",
+  "representative": true
+ }
+}
