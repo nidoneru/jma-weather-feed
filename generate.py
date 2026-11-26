@@ -359,6 +359,10 @@ a{color:var(--primary)}
 .region:last-child{margin-bottom:0}
 .region a{font-size:17px;font-weight:500;text-decoration:none}
 .region .members{color:var(--on-surface-variant);font-size:13px}
+.region .members a{font-size:13px;font-weight:400}
+.updated-when{font-size:26px;font-weight:500;margin:2px 0 10px}
+.note-list{margin:14px 0}
+.gap{margin-top:14px}
 .at{width:.95em;height:.95em;vertical-align:-.15em}
 @media (max-width:640px){
   .area-name{flex-basis:100%}
@@ -369,31 +373,41 @@ a{color:var(--primary)}
 REGIONS = [
     ("hokkaido", "北海道",
      ["011000", "012000", "013000", "014030", "014100", "015000", "016000", "017000"],
-     "宗谷、上川・留萌、網走・北見・紋別、十勝、釧路・根室、胆振・日高、石狩・空知・後志、渡島・檜山"),
+     [("宗谷", "011000"), ("上川・留萌", "012000"), ("網走・北見・紋別", "013000"),
+      ("十勝", "014030"), ("釧路・根室", "014100"), ("胆振・日高", "015000"),
+      ("石狩・空知・後志", "016000"), ("渡島・檜山", "017000")]),
     ("tohoku", "東北",
      ["020000", "030000", "040000", "050000", "060000", "070000"],
-     "青森、岩手、宮城、秋田、山形、福島"),
+     [("青森", "020000"), ("岩手", "030000"), ("宮城", "040000"),
+      ("秋田", "050000"), ("山形", "060000"), ("福島", "070000")]),
     ("kanto", "関東・甲信越",
      ["080000", "090000", "100000", "110000", "120000", "130000", "140000", "150000", "190000", "200000"],
-     "茨城、栃木、群馬、埼玉、千葉、東京、神奈川、新潟、山梨、長野"),
+     [("茨城", "080000"), ("栃木", "090000"), ("群馬", "100000"), ("埼玉", "110000"),
+      ("千葉", "120000"), ("東京", "130000"), ("神奈川", "140000"), ("新潟", "150000"),
+      ("山梨", "190000"), ("長野", "200000")]),
     ("tokai", "東海・北陸",
      ["160000", "170000", "180000", "210000", "220000", "230000", "240000"],
-     "富山、石川、福井、岐阜、静岡、愛知、三重"),
+     [("富山", "160000"), ("石川", "170000"), ("福井", "180000"), ("岐阜", "210000"),
+      ("静岡", "220000"), ("愛知", "230000"), ("三重", "240000")]),
     ("kansai", "関西",
      ["250000", "260000", "270000", "280000", "290000", "300000"],
-     "滋賀、京都、大阪、兵庫、奈良、和歌山"),
+     [("滋賀", "250000"), ("京都", "260000"), ("大阪", "270000"),
+      ("兵庫", "280000"), ("奈良", "290000"), ("和歌山", "300000")]),
     ("chugoku", "中国",
      ["310000", "320000", "330000", "340000", "350000"],
-     "鳥取、島根、岡山、広島、山口"),
+     [("鳥取", "310000"), ("島根", "320000"), ("岡山", "330000"),
+      ("広島", "340000"), ("山口", "350000")]),
     ("shikoku", "四国",
      ["360000", "370000", "380000", "390000"],
-     "徳島、香川、愛媛、高知"),
+     [("徳島", "360000"), ("香川", "370000"), ("愛媛", "380000"), ("高知", "390000")]),
     ("kyushu", "九州・沖縄",
      ["400000", "410000", "420000", "430000", "440000", "450000",
       "460040", "460100", "471000", "472000", "473000", "474000"],
-     "福岡、佐賀、長崎、熊本、大分、宮崎、鹿児島、沖縄"),
+     [("福岡", "400000"), ("佐賀", "410000"), ("長崎", "420000"), ("熊本", "430000"),
+      ("大分", "440000"), ("宮崎", "450000"), ("鹿児島", "460100"), ("沖縄", "471000")]),
 ]
 
+SAMPLE_STAMP = "2026年12月13日 23時45分"
 FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfDXD4EkW81uoFn-BVUP8hcEKdRLjafR5m5csddDG-_DtGU8A/viewform"
 ISSUES_URL = "https://github.com/nidoneru/jma-weather-feed/issues"
 
@@ -417,7 +431,11 @@ def render_index(area, grouped, sample, generated_str):
 
     region_index = "".join(
         f'<p class="region"><a href="#region-{slug}">{xml_escape(rname)}</a><br>'
-        f'<span class="members">{xml_escape(members)}</span></p>'
+        f'<span class="members">'
+        + "、".join(
+            f'<a href="#office-{mcode}">{xml_escape(mname)}</a>' for mname, mcode in members
+        )
+        + "</span></p>"
         for slug, rname, _codes, members in REGIONS
     )
     region_sections = []
@@ -427,7 +445,7 @@ def render_index(area, grouped, sample, generated_str):
             if oc not in grouped_map:
                 continue
             parts.append(
-                f'<h3 class="office">{xml_escape(area["offices"][oc]["name"])}</h3>'
+                f'<h3 class="office" id="office-{oc}">{xml_escape(area["offices"][oc]["name"])}</h3>'
                 f'<section class="card">{rows_html(grouped_map[oc])}</section>'
             )
         region_sections.append("".join(parts))
@@ -453,20 +471,26 @@ def render_index(area, grouped, sample, generated_str):
 <main>
 <h1>天気予報フィード</h1>
 <p class="lead">気象庁が発表する天気予報を、一次細分区域（全国142地点）ごとに iCal・RSS・JSON で配布しています。短期予報と週間予報を統合した7日分です（表示は短期優先）。1日3回（朝・昼・夕）更新予定です。</p>
-<p class="meta">更新：{generated_str}<br>{SOURCE_LINE}しています</p>
 {sample_html}
 <h2 class="sec">カレンダーへの登録（Google カレンダー）</h2>
 <section class="card">
 <ol>
-<li>下の地点一覧で、自分の地域の「iCal」の URL をコピーします</li>
-<li><a href="https://calendar.google.com/">Google カレンダー</a>の「設定」→「カレンダーを追加」→「URLで追加」に貼り付けます</li>
-<li>あとは、Google カレンダーと同期しているスマホのカレンダーアプリにも、自動で表示されます</li>
+<li>下の<a href="#areas">「地点一覧」</a>で、自分の地域の「iCal」の URL をコピーします</li>
+<li><a href="https://calendar.google.com/">Google カレンダー</a>の画面左側にある「他のカレンダー」の「＋」から「URLで追加」を選んで登録します</li>
+<li>Google 側との同期が終了すると、スマホ側のカレンダーにも自動で表示されます</li>
 </ol>
-<p>短い経路もあります。Google カレンダーの画面左側にある「他のカレンダー」の「＋」から「URLで追加」を選んでも登録できます。</p>
 <p><img class="figure" src="gcal-short-route.png" alt="Google カレンダーで「他のカレンダー」の「＋」を押し、「URLで追加」を選んで、URL を貼り付ける手順の図"></p>
-<p class="small">※ URLでの登録は、パソコンのブラウザからのみ行えます。スマホの Google カレンダーアプリからは登録できません。</p>
-<p class="small">スマホしかない場合は、ブラウザで PC 版サイトを表示すれば同じ画面で登録できます。Chrome（Android）は右上の「︙」メニューから「PC版サイト」にチェック、Safari（iPhone）はアドレスバーの「ぁあ」から「デスクトップ用Webサイトを表示」、Chrome（iPhone）は「…」メニューから「デスクトップサイトを表示」です。その状態で Google カレンダーを開いてください。画面は小さくて操作しづらいですが、登録だけならできます。</p>
-<p class="small">webcal のリンクは、対応アプリで開くとそのまま購読登録に進みます。iPhone・Mac のカレンダーは webcal、または iCal の URL を「新規照会カレンダー」に入力してください。</p>
+<ol start="4">
+<li>URLの登録は、パソコンのブラウザからのみ行えます。スマホの Google カレンダーアプリからは登録できません。</li>
+</ol>
+<p class="small">スマホしかない場合は、ブラウザで PC 版サイトを表示すれば同じ画面で登録できます。</p>
+<ul class="small note-list">
+<li>Chrome（Android）：右上の「︙」メニューから「PC版サイト」にチェック</li>
+<li>Chrome（iPhone）：画面右下の「…」メニューから「PC版サイトを見る」</li>
+<li>Safari（iPhone）：画面左下のボタンをタップし、右下の「…」から「デスクトップ用Webサイトを表示」</li>
+</ul>
+<p class="small">表示が小さくて操作しづらいですが、ピンチアウトで拡大表示するなどして登録してください。</p>
+<p class="small gap">webcal のリンクは、対応アプリで開くとそのまま購読登録に進みます。iPhone のカレンダーは「照会カレンダーを追加」、Mac のカレンダーは「新規照会カレンダー」から、URL を入力して登録することもできます。</p>
 </section>
 <h2 class="sec">RSS リーダーへの登録</h2>
 <section class="card">
@@ -475,25 +499,38 @@ def render_index(area, grouped, sample, generated_str):
 <li>まとめて登録するなら、<a href="feeds.opml">OPML ファイル</a>をリーダーに読み込ませます（予報区ごとのフォルダで入ります）</li>
 </ul>
 </section>
-<h2 class="sec">地点一覧</h2>
+<h2 class="sec">更新日時</h2>
+<section class="card">
+<p>このサイトとフィードのデータは</p>
+<p class="updated-when">{generated_str}</p>
+<p>1日3回（朝・昼・夕）、気象庁の発表に合わせて更新しています。</p>
+<p>各フィード（iCal・RSS・JSON）の末尾にも、同じ更新日時が入っています。</p>
+</section>
+<h2 class="sec">出典と免責</h2>
+<section class="card">
+<p>気象庁の天気予報データを加工して作成しています。データは<a href="https://www.jma.go.jp/">気象庁ホームページ</a>で発表されたものです。</p>
+<p>このサイトは、個人が運営する非公式なものです。予報の正確性は保証しません。防災など重要な判断には、必ず気象庁の公式情報を確認してください。</p>
+</section>
+<h2 class="sec" id="areas">地点一覧</h2>
 <section class="card">
 {region_index}
 </section>
 {''.join(region_sections)}
-<h2 class="sec">出典と免責</h2>
+<h2 class="sec">お問い合わせ</h2>
 <section class="card">
-<p>気象庁の天気予報データを加工して作成しています。データは気象庁ホームページ（https://www.jma.go.jp/）で発表されたものです。</p>
-<p>このサービスは個人が運営する非公式のものです。予報の正確性は保証しません。防災など重要な判断には、必ず気象庁の公式情報を確認してください。</p>
-</section>
-<h2 class="sec">問い合わせ</h2>
-<section class="card">
-<p>問い合わせは、次の方法で受け付けています。</p>
 <ul>
-<li>フォーム：<a href="{FORM_URL}">お問い合わせフォーム</a>（一番手軽です）</li>
+<li>フォーム：<a href="{FORM_URL}">Google フォーム</a></li>
 <li>メール：<span id="contact-mail"><noscript>aegithaloscaudatusjaponicus<svg class="at" viewBox="0 0 60 60" aria-hidden="true"><text x="2" y="46" font-size="50" fill="currentColor">@</text></svg>duck.com</noscript></span></li>
-<li>不具合の報告：<a href="{ISSUES_URL}">GitHub Issues</a> でも受け付けています</li>
+<li><a href="{ISSUES_URL}">GitHub Issues</a></li>
 </ul>
 <p class="small">個人で運営しているため、返信にお時間をいただく場合があります。</p>
+</section>
+<h2 class="sec">用語解説</h2>
+<section class="card">
+<p><strong>iCal</strong>：カレンダーアプリで予定をやり取りするための形式。このサイトでは天気予報を予定の形で配布していて、URL を登録するとカレンダーに予報が表示される。</p>
+<p><strong>webcal</strong>：iCal の URL をカレンダーアプリで直接開くための、リンクの形式。押すと対応アプリが起動して、購読登録に進む。中身は iCal と同じ。</p>
+<p><strong>RSS</strong>：Really Simple Syndication の略。サイトの更新内容を配信するための形式で、このサイトでは予報を記事の形で配信している。RSS リーダーに登録すると更新分が届く。</p>
+<p><strong>JSON</strong>：JavaScript Object Notation の略。プログラムがデータを読み取るための形式で、このサイトでは天気・気温・降水確率などをそのまま配布している。アプリや AI などに取り込める。</p>
 </section>
 <script>(function(){{var u=['aegithalos','caudatus','japonicus'].join('');var a=u+String.fromCharCode(64)+['duck','com'].join('.');var s=document.getElementById('contact-mail');var l=document.createElement('a');l.href='mailto:'+a;l.textContent=a;s.textContent='';s.appendChild(l);}})();</script>
 </main>
@@ -527,7 +564,7 @@ def main():
         (out / sub).mkdir(parents=True, exist_ok=True)
 
     gen_dt = datetime.now(JST)
-    generated_str = gen_dt.strftime("%Y年%m月%d日 %H:%M")
+    generated_str = f"{gen_dt.year}年{gen_dt.month}月{gen_dt.day}日 {gen_dt.hour}時{gen_dt.minute:02d}分"
     stamp = gen_dt.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
 
     data = Data()
@@ -558,7 +595,7 @@ def main():
             (out / "json" / f"{code}.json").write_text(
                 render_json(code, name, office_name, days, generated_str), encoding="utf-8")
             if code == "130010" and len(days) > 1:
-                sample = (day_title(days[1]), "\n".join(day_lines(days[1], generated_str)))
+                sample = (day_title(days[1]), "\n".join(day_lines(days[1], SAMPLE_STAMP)))
             count += 1
     (out / "index.html").write_text(render_index(area, grouped, sample, generated_str), encoding="utf-8")
     (out / "feeds.opml").write_text(render_opml(area, grouped), encoding="utf-8")
