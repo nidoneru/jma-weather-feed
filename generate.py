@@ -513,6 +513,7 @@ def render_index(area, grouped, sample, generated_str):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>天気予報フィード</title>
+<meta name="description" content="気象庁の天気予報を、全国142地点ごとに iCal・RSS・JSON で配布するフィードです。短期予報と週間予報を統合した7日分を、Google カレンダーや Outlook カレンダー、RSS リーダーで受け取れます。">
 <link rel="icon" type="image/png" href="favicon.png">
 <style>{INDEX_CSS}</style>
 <script data-goatcounter="https://jma-weather-feed.goatcounter.com/count"
