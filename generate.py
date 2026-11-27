@@ -473,6 +473,11 @@ def render_index(area, grouped, sample, generated_str):
 <main>
 <h1>天気予報フィード</h1>
 <p class="lead">気象庁が発表する天気予報を、一次細分区域（全国142地点）ごとに iCal・RSS・JSON で配布しています。短期予報（今日〜明後日）と週間予報を統合した7日分です（表示は短期優先）。</p>
+<h2 class="sec">更新日時</h2>
+<section class="card">
+<p class="updated-when">{generated_str}</p>
+<p>各フィード（iCal・RSS・JSON）の末尾にも、同じ更新日時が入っています。</p>
+</section>
 {sample_html}
 <h2 class="sec">カレンダーへの登録（Google カレンダー）</h2>
 <section class="card">
@@ -501,11 +506,6 @@ def render_index(area, grouped, sample, generated_str):
 <li>まとめて登録するなら、<a href="feeds.opml">OPML ファイル</a>をリーダーに読み込ませます（予報区ごとのフォルダで入ります）</li>
 </ul>
 </section>
-<h2 class="sec">更新日時</h2>
-<section class="card">
-<p class="updated-when">{generated_str}</p>
-<p>各フィード（iCal・RSS・JSON）の末尾にも、同じ更新日時が入っています。</p>
-</section>
 <h2 class="sec">出典と免責</h2>
 <section class="card">
 <p>気象庁の天気予報データを加工して作成しています。データは<a href="https://www.jma.go.jp/">気象庁ホームページ</a>で発表されたものです。</p>
@@ -530,7 +530,17 @@ def render_index(area, grouped, sample, generated_str):
 <p><strong>iCal</strong>：カレンダーアプリで予定をやり取りするための形式。このサイトでは天気予報を予定の形で配布していて、URL を登録するとカレンダーに予報が表示される。</p>
 <p><strong>webcal</strong>：iCal の URL をカレンダーアプリで直接開くための、リンクの形式。押すと対応アプリが起動して、購読登録に進む。中身は iCal と同じ。</p>
 <p><strong>RSS</strong>：Really Simple Syndication の略。サイトの更新内容を配信するための形式で、このサイトでは予報を記事の形で配信している。RSS リーダーに登録すると更新分が届く。</p>
+<p><strong>OPML</strong>：Outline Processor Markup Language の略。RSS フィードの一覧をまとめて受け渡すための形式で、このサイトでは全地点の RSS を予報区ごとのフォルダに分けて1ファイルにまとめている。RSS リーダーに読み込ませると、全地点を一度に登録できる。</p>
 <p><strong>JSON</strong>：JavaScript Object Notation の略。プログラムがデータを読み取るための形式で、このサイトでは天気・気温・降水確率などをそのまま配布している。アプリや AI などに取り込める。</p>
+</section>
+<h2 class="sec">参考リンク</h2>
+<section class="card">
+<ul>
+<li><a href="https://www.jma.go.jp/">気象庁ホームページ</a>：このサイトで配布しているデータの出典です</li>
+<li><a href="https://www.jma.go.jp/bosai/forecast/">天気予報（気象庁）</a>：地図から地域を選んで見る、公式の天気予報です</li>
+<li><a href="https://www.jma.go.jp/jma/kishou/know/yougo_hp/mokuji.html">予報用語（気象庁）</a>：「時々」「一時」など、天気予報で使う言葉の意味を解説しています</li>
+<li><a href="https://www.data.jma.go.jp/developer/index.html">気象庁情報カタログ</a>：気象庁が配信しているデータの一覧です</li>
+</ul>
 </section>
 <script>(function(){{var u=['aegithalos','caudatus','japonicus'].join('');var a=u+String.fromCharCode(64)+['duck','com'].join('.');var s=document.getElementById('contact-mail');var l=document.createElement('a');l.href='mailto:'+a;l.textContent=a;s.textContent='';s.appendChild(l);}})();</script>
 </main>
