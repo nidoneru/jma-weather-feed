@@ -466,6 +466,8 @@ def render_index(area, grouped, sample, generated_str):
 <title>天気予報フィード</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <style>{INDEX_CSS}</style>
+<script data-goatcounter="https://jma-weather-feed.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 <main>
