@@ -444,7 +444,19 @@ REGIONS = [
       ("大分", "440000"), ("宮崎", "450000"), ("鹿児島", "460100"), ("沖縄", "471000")]),
 ]
 
-SAMPLE_STAMP = "2026年12月13日 23時43分"
+SAMPLE_STAMP = "2026年1月23日 4時56分"
+# 表示例は固定の内容（2026-11-27 に本人が1行ずつ指定して確定）
+SAMPLE = (
+    "晴れ 9℃｜-2℃ 0%",
+    "\n".join([
+        "天気：晴れ",
+        "降水確率：0-6時 0%｜6-12時 0%｜12-18時 0%｜18-24時 0%",
+        "風：北西の風 ２３区西部 では 北西の風 やや強く",
+        "気温：東京 最高9℃ 最低-2℃",
+        SOURCE_LINE,
+        f"更新：{SAMPLE_STAMP}",
+    ]),
+)
 FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfDXD4EkW81uoFn-BVUP8hcEKdRLjafR5m5csddDG-_DtGU8A/viewform"
 ISSUES_URL = "https://github.com/nidoneru/jma-weather-feed/issues"
 
@@ -627,7 +639,7 @@ def main():
         if areas:
             grouped.append((oc, areas))
 
-    sample = None
+    sample = SAMPLE
     count = 0
     for oc, areas in grouped:
         office_name = area["offices"][oc]["name"]
@@ -642,8 +654,6 @@ def main():
                 render_rss(code, name, days, generated_str, gen_dt), encoding="utf-8")
             (out / "json" / f"{code}.json").write_text(
                 render_json(code, name, office_name, days, generated_str), encoding="utf-8")
-            if code == "130010" and len(days) > 1:
-                sample = (day_title(days[1]), "\n".join(day_lines(days[1], SAMPLE_STAMP)))
             count += 1
     (out / "index.html").write_text(render_index(area, grouped, sample, generated_str), encoding="utf-8")
     (out / "feeds.opml").write_text(render_opml(area, grouped), encoding="utf-8")
