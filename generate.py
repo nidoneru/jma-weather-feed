@@ -577,6 +577,7 @@ def render_index(area, grouped, sample, generated_str):
 <li><a href="https://www.jma.go.jp/bosai/forecast/">天気予報（気象庁）</a>：地図から地域を選んで見る、公式の天気予報です</li>
 <li><a href="https://www.jma.go.jp/jma/kishou/know/yougo_hp/mokuji.html">予報用語（気象庁）</a>：「時々」「一時」など、天気予報で使う言葉の意味を解説しています</li>
 <li><a href="https://www.data.jma.go.jp/developer/index.html">気象庁情報カタログ</a>：気象庁が配信しているデータの一覧です</li>
+<li><a href="https://xml.kishou.go.jp/tec_material.html">防災情報XMLの技術資料（気象庁）</a>：気象庁が配信するXML電文の仕様資料です</li>
 </ul>
 </section>
 <script>(function(){{var u=['aegithalos','caudatus','japonicus'].join('');var a=u+String.fromCharCode(64)+['duck','com'].join('.');var s=document.getElementById('contact-mail');var l=document.createElement('a');l.href='mailto:'+a;l.textContent=a;s.textContent='';s.appendChild(l);}})();</script>
