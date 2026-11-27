@@ -9,6 +9,7 @@
 """
 import argparse
 import json
+import re
 import shutil
 import sys
 import urllib.request
@@ -43,6 +44,42 @@ def to_int(v):
         return None
 
 
+# 天気テキストの表示整形（2026-11-27 確定仕様）。天気コード自体は変えない。
+_FMT_TOKENS = sorted(
+    ["時々止む", "一時強く降る"]
+    + ["朝のうち", "昼頃から", "夕方から", "夜半から", "朝夕", "朝晩", "日中",
+       "午後は", "明け方", "夕方", "夜は"]
+    + ["海上海岸は", "山沿い"]
+    + ["風雨共に強い", "風雪強い", "暴風雪", "雷雨", "大雨", "大雪", "霧雨",
+       "晴れ", "くもり", "雨", "雪", "霧", "みぞれ"]
+    + ["のち", "時々", "一時"],
+    key=len, reverse=True,
+)
+_FMT_KA = re.compile(r"(晴れ|くもり|雨|雪|霧|霧雨|みぞれ)か(晴れ|くもり|雨|雪|霧雨|雷雨|みぞれ)")
+
+
+def format_weather_text(t):
+    # 1. つなぎの「後」を「のち」に置換（直後が天気の語で始まる場合のみ。「午後」は対象外）
+    t = re.sub(r"後(?=[く晴雨雪み時一])", "のち", t)
+    # 2. 「で〜を伴う」の形は無区切りのまま
+    if "を伴う" in t:
+        return t
+    # 3. 「か」を含む形は、「のち」の前後だけ区切る（「昼頃から」等の「から」は対象外）
+    if _FMT_KA.search(t):
+        return t.replace("のち", " のち ").strip() if "のち" in t else t
+    # 4. それ以外は全要素を半角スペースで区切る（「時々止む」等の述語は1塊）
+    toks, i = [], 0
+    while i < len(t):
+        for tok in _FMT_TOKENS:
+            if t.startswith(tok, i):
+                toks.append(tok)
+                i += len(tok)
+                break
+        else:
+            return t
+    return " ".join(toks)
+
+
 class Data:
     def __init__(self):
         self.codes = json.loads((ROOT / "data/weather_codes.json").read_text(encoding="utf-8"))
@@ -64,7 +101,7 @@ class Data:
         if t is None:
             self.unknown_codes.add(code)
             return ""
-        return t
+        return format_weather_text(t)
 
 
 def parse_forecasts(area):
