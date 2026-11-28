@@ -1,0 +1,148 @@
+{
+ "area": {
+  "code": "050010",
+  "name": "沿岸",
+  "office": "秋田県"
+ },
+ "generated": "2026年11月29日 2時11分",
+ "source": "出典：気象庁の天気予報データを加工して作成",
+ "days": [
+  {
+   "date": "2026-11-28",
+   "kind": "short",
+   "weatherCode": "300",
+   "weather": "雨",
+   "wind": "北西の風 やや強く 海上 では 北西の風 強く",
+   "pops": [
+    {
+     "slot": "18-24時",
+     "value": 90
+    }
+   ],
+   "temps": []
+  },
+  {
+   "date": "2026-11-29",
+   "kind": "short",
+   "weatherCode": "302",
+   "weather": "雨 時々止む",
+   "wind": "北西の風 やや強く 後 西の風 やや強く 海上 では 北西の風 強く",
+   "pops": [
+    {
+     "slot": "0-6時",
+     "value": 60
+    },
+    {
+     "slot": "6-12時",
+     "value": 60
+    },
+    {
+     "slot": "12-18時",
+     "value": 60
+    },
+    {
+     "slot": "18-24時",
+     "value": 20
+    }
+   ],
+   "temps": [
+    {
+     "point": "秋田",
+     "min": 2,
+     "max": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-11-30",
+   "kind": "short",
+   "weatherCode": "202",
+   "weather": "くもり 一時 雨",
+   "wind": "南西の風 やや強く",
+   "pops": [],
+   "temps": [
+    {
+     "point": "秋田",
+     "min": 4,
+     "max": 13
+    }
+   ]
+  },
+  {
+   "date": "2026-12-01",
+   "kind": "weekly",
+   "weatherCode": "202",
+   "weather": "くもり 一時 雨",
+   "wind": null,
+   "pops": [
+    {
+     "value": 60
+    }
+   ],
+   "temps": [
+    {
+     "point": "秋田",
+     "min": 6,
+     "max": 15
+    }
+   ]
+  },
+  {
+   "date": "2026-12-02",
+   "kind": "weekly",
+   "weatherCode": "101",
+   "weather": "晴れ 時々 くもり",
+   "wind": null,
+   "pops": [
+    {
+     "value": 20
+    }
+   ],
+   "temps": [
+    {
+     "point": "秋田",
+     "min": 3,
+     "max": 10
+    }
+   ]
+  },
+  {
+   "date": "2026-12-03",
+   "kind": "weekly",
+   "weatherCode": "202",
+   "weather": "くもり 一時 雨",
+   "wind": null,
+   "pops": [
+    {
+     "value": 50
+    }
+   ],
+   "temps": [
+    {
+     "point": "秋田",
+     "min": 2,
+     "max": 11
+    }
+   ]
+  },
+  {
+   "date": "2026-12-04",
+   "kind": "weekly",
+   "weatherCode": "202",
+   "weather": "くもり 一時 雨",
+   "wind": null,
+   "pops": [
+    {
+     "value": 50
+    }
+   ],
+   "temps": [
+    {
+     "point": "秋田",
+     "min": 4,
+     "max": 10
+    }
+   ]
+  }
+ ]
+}

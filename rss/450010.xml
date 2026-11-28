@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>天気予報フィード 南部平野部</title><link>https://nidoneru.github.io/jma-weather-feed/#450010</link><description>気象庁の天気予報（南部平野部）。出典：気象庁の天気予報データを加工して作成しています。</description><language>ja</language><lastBuildDate>Sun, 29 Nov 2026 02:11:34 +0900</lastBuildDate><item><title>南部平野部 11月28日（土）くもり 20%</title><link>https://nidoneru.github.io/jma-weather-feed/#450010</link><guid isPermaLink="false">450010-20261128</guid><pubDate>Sat, 28 Nov 2026 05:00:00 +0900</pubDate><description>天気：くもり
+降水確率：18-24時 20%
+風：西の風 やや強く 海上 では 北西の風 強く
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>南部平野部 11月29日（日）晴れ 17℃｜8℃ 10%</title><link>https://nidoneru.github.io/jma-weather-feed/#450010</link><guid isPermaLink="false">450010-20261129</guid><pubDate>Sun, 29 Nov 2026 05:00:00 +0900</pubDate><description>天気：晴れ
+降水確率：0-6時 10%｜6-12時 0%｜12-18時 0%｜18-24時 0%
+風：西の風 はじめ やや強く 海上 では はじめ 北西の風 強く
+気温：宮崎 最高17℃ 最低8℃｜油津 最高17℃ 最低8℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>南部平野部 11月30日（月）晴れ 19℃｜6℃</title><link>https://nidoneru.github.io/jma-weather-feed/#450010</link><guid isPermaLink="false">450010-20261130</guid><pubDate>Mon, 30 Nov 2026 05:00:00 +0900</pubDate><description>天気：晴れ
+風：西の風 後 南西の風
+気温：宮崎 最高19℃ 最低6℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>南部平野部 12月1日（火）晴れ 時々 くもり 23℃｜8℃ 20%</title><link>https://nidoneru.github.io/jma-weather-feed/#450010</link><guid isPermaLink="false">450010-20261201</guid><pubDate>Tue, 01 Dec 2026 05:00:00 +0900</pubDate><description>天気：晴れ 時々 くもり
+降水確率：20%
+気温：宮崎 最高23℃ 最低8℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>南部平野部 12月2日（水）くもり 時々 晴れ 22℃｜10℃ 30%</title><link>https://nidoneru.github.io/jma-weather-feed/#450010</link><guid isPermaLink="false">450010-20261202</guid><pubDate>Wed, 02 Dec 2026 05:00:00 +0900</pubDate><description>天気：くもり 時々 晴れ
+降水確率：30%
+気温：宮崎 最高22℃ 最低10℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>南部平野部 12月3日（木）くもり 22℃｜12℃ 40%</title><link>https://nidoneru.github.io/jma-weather-feed/#450010</link><guid isPermaLink="false">450010-20261203</guid><pubDate>Thu, 03 Dec 2026 05:00:00 +0900</pubDate><description>天気：くもり
+降水確率：40%
+気温：宮崎 最高22℃ 最低12℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>南部平野部 12月4日（金）くもり 22℃｜13℃ 40%</title><link>https://nidoneru.github.io/jma-weather-feed/#450010</link><guid isPermaLink="false">450010-20261204</guid><pubDate>Fri, 04 Dec 2026 05:00:00 +0900</pubDate><description>天気：くもり
+降水確率：40%
+気温：宮崎 最高22℃ 最低13℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item></channel></rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>天気予報フィード 下越</title><link>https://nidoneru.github.io/jma-weather-feed/#150010</link><description>気象庁の天気予報（下越）。出典：気象庁の天気予報データを加工して作成しています。</description><language>ja</language><lastBuildDate>Sun, 29 Nov 2026 02:11:34 +0900</lastBuildDate><item><title>下越 11月28日（土）雨 90%</title><link>https://nidoneru.github.io/jma-weather-feed/#150010</link><guid isPermaLink="false">150010-20261128</guid><pubDate>Sat, 28 Nov 2026 05:00:00 +0900</pubDate><description>天気：雨
+降水確率：18-24時 90%
+風：北西の風 強く
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>下越 11月29日（日）雨か雪 9℃｜5℃ 90%</title><link>https://nidoneru.github.io/jma-weather-feed/#150010</link><guid isPermaLink="false">150010-20261129</guid><pubDate>Sun, 29 Nov 2026 05:00:00 +0900</pubDate><description>天気：雨か雪
+降水確率：0-6時 90%｜6-12時 70%｜12-18時 70%｜18-24時 40%
+風：北西の風 強く 後 西の風 やや強く
+気温：新潟 最高9℃ 最低5℃｜津川 最高5℃ 最低3℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>下越 11月30日（月）くもり 時々 晴れ 16℃｜5℃</title><link>https://nidoneru.github.io/jma-weather-feed/#150010</link><guid isPermaLink="false">150010-20261130</guid><pubDate>Mon, 30 Nov 2026 05:00:00 +0900</pubDate><description>天気：くもり 時々 晴れ
+風：南の風 後 南西の風 やや強く
+気温：新潟 最高16℃ 最低5℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>下越 12月1日（火）くもり 一時 雨 18℃｜9℃ 50%</title><link>https://nidoneru.github.io/jma-weather-feed/#150010</link><guid isPermaLink="false">150010-20261201</guid><pubDate>Tue, 01 Dec 2026 05:00:00 +0900</pubDate><description>天気：くもり 一時 雨
+降水確率：50%
+気温：新潟 最高18℃ 最低9℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>下越 12月2日（水）くもり 15℃｜6℃ 40%</title><link>https://nidoneru.github.io/jma-weather-feed/#150010</link><guid isPermaLink="false">150010-20261202</guid><pubDate>Wed, 02 Dec 2026 05:00:00 +0900</pubDate><description>天気：くもり
+降水確率：40%
+気温：新潟 最高15℃ 最低6℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>下越 12月3日（木）くもり 一時 雨 16℃｜6℃ 50%</title><link>https://nidoneru.github.io/jma-weather-feed/#150010</link><guid isPermaLink="false">150010-20261203</guid><pubDate>Thu, 03 Dec 2026 05:00:00 +0900</pubDate><description>天気：くもり 一時 雨
+降水確率：50%
+気温：新潟 最高16℃ 最低6℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>下越 12月4日（金）くもり 一時 雨 14℃｜7℃ 50%</title><link>https://nidoneru.github.io/jma-weather-feed/#150010</link><guid isPermaLink="false">150010-20261204</guid><pubDate>Fri, 04 Dec 2026 05:00:00 +0900</pubDate><description>天気：くもり 一時 雨
+降水確率：50%
+気温：新潟 最高14℃ 最低7℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item></channel></rss>

@@ -1,0 +1,148 @@
+{
+ "area": {
+  "code": "016020",
+  "name": "空知地方",
+  "office": "石狩・空知・後志地方"
+ },
+ "generated": "2026年11月29日 2時11分",
+ "source": "出典：気象庁の天気予報データを加工して作成",
+ "days": [
+  {
+   "date": "2026-11-28",
+   "kind": "short",
+   "weatherCode": "200",
+   "weather": "くもり",
+   "wind": "北の風 後 西の風",
+   "pops": [
+    {
+     "slot": "18-24時",
+     "value": 20
+    }
+   ],
+   "temps": []
+  },
+  {
+   "date": "2026-11-29",
+   "kind": "short",
+   "weatherCode": "205",
+   "weather": "くもり 時々 雪",
+   "wind": "西の風 日中 やや強く",
+   "pops": [
+    {
+     "slot": "0-6時",
+     "value": 30
+    },
+    {
+     "slot": "6-12時",
+     "value": 60
+    },
+    {
+     "slot": "12-18時",
+     "value": 50
+    },
+    {
+     "slot": "18-24時",
+     "value": 30
+    }
+   ],
+   "temps": [
+    {
+     "point": "岩見沢",
+     "min": -1,
+     "max": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-30",
+   "kind": "short",
+   "weatherCode": "218",
+   "weather": "くもり のち 雨か雪",
+   "wind": "南の風",
+   "pops": [],
+   "temps": [
+    {
+     "point": "札幌",
+     "min": -1,
+     "max": 8
+    }
+   ]
+  },
+  {
+   "date": "2026-12-01",
+   "kind": "weekly",
+   "weatherCode": "206",
+   "weather": "くもり一時雨か雪",
+   "wind": null,
+   "pops": [
+    {
+     "value": 50
+    }
+   ],
+   "temps": [
+    {
+     "point": "札幌",
+     "min": 1,
+     "max": 11
+    }
+   ]
+  },
+  {
+   "date": "2026-12-02",
+   "kind": "weekly",
+   "weatherCode": "200",
+   "weather": "くもり",
+   "wind": null,
+   "pops": [
+    {
+     "value": 40
+    }
+   ],
+   "temps": [
+    {
+     "point": "札幌",
+     "min": 1,
+     "max": 4
+    }
+   ]
+  },
+  {
+   "date": "2026-12-03",
+   "kind": "weekly",
+   "weatherCode": "260",
+   "weather": "くもり一時雪か雨",
+   "wind": null,
+   "pops": [
+    {
+     "value": 50
+    }
+   ],
+   "temps": [
+    {
+     "point": "札幌",
+     "min": 1,
+     "max": 4
+    }
+   ]
+  },
+  {
+   "date": "2026-12-04",
+   "kind": "weekly",
+   "weatherCode": "260",
+   "weather": "くもり一時雪か雨",
+   "wind": null,
+   "pops": [
+    {
+     "value": 50
+    }
+   ],
+   "temps": [
+    {
+     "point": "札幌",
+     "min": 0,
+     "max": 4
+    }
+   ]
+  }
+ ]
+}

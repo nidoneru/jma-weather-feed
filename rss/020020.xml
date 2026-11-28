@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>天気予報フィード 下北</title><link>https://nidoneru.github.io/jma-weather-feed/#020020</link><description>気象庁の天気予報（下北）。出典：気象庁の天気予報データを加工して作成しています。</description><language>ja</language><lastBuildDate>Sun, 29 Nov 2026 02:11:34 +0900</lastBuildDate><item><title>下北 11月28日（土）くもり 時々 雨 50%</title><link>https://nidoneru.github.io/jma-weather-feed/#020020</link><guid isPermaLink="false">020020-20261128</guid><pubDate>Sat, 28 Nov 2026 05:00:00 +0900</pubDate><description>天気：くもり 時々 雨
+降水確率：18-24時 50%
+風：西の風 海上 では 後 北西の風 強く
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>下北 11月29日（日）くもり 4℃｜1℃ 30%</title><link>https://nidoneru.github.io/jma-weather-feed/#020020</link><guid isPermaLink="false">020020-20261129</guid><pubDate>Sun, 29 Nov 2026 05:00:00 +0900</pubDate><description>天気：くもり
+降水確率：0-6時 20%｜6-12時 30%｜12-18時 30%｜18-24時 10%
+風：西の風 後 やや強く 海上 では 北西の風 強く
+気温：むつ 最高4℃ 最低1℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>下北 11月30日（月）くもり 一時 雨 14℃｜1℃</title><link>https://nidoneru.github.io/jma-weather-feed/#020020</link><guid isPermaLink="false">020020-20261130</guid><pubDate>Mon, 30 Nov 2026 05:00:00 +0900</pubDate><description>天気：くもり 一時 雨
+風：南西の風
+気温：八戸 最高14℃ 最低1℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>下北 12月1日（火）くもり 一時 雨 16℃｜5℃ 50%</title><link>https://nidoneru.github.io/jma-weather-feed/#020020</link><guid isPermaLink="false">020020-20261201</guid><pubDate>Tue, 01 Dec 2026 05:00:00 +0900</pubDate><description>天気：くもり 一時 雨
+降水確率：50%
+気温：八戸 最高16℃ 最低5℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>下北 12月2日（水）晴れ 時々 くもり 9℃｜1℃ 20%</title><link>https://nidoneru.github.io/jma-weather-feed/#020020</link><guid isPermaLink="false">020020-20261202</guid><pubDate>Wed, 02 Dec 2026 05:00:00 +0900</pubDate><description>天気：晴れ 時々 くもり
+降水確率：20%
+気温：八戸 最高9℃ 最低1℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>下北 12月3日（木）くもり一時雨か雪 10℃｜1℃ 50%</title><link>https://nidoneru.github.io/jma-weather-feed/#020020</link><guid isPermaLink="false">020020-20261203</guid><pubDate>Thu, 03 Dec 2026 05:00:00 +0900</pubDate><description>天気：くもり一時雨か雪
+降水確率：50%
+気温：八戸 最高10℃ 最低1℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>下北 12月4日（金）くもり 9℃｜3℃ 40%</title><link>https://nidoneru.github.io/jma-weather-feed/#020020</link><guid isPermaLink="false">020020-20261204</guid><pubDate>Fri, 04 Dec 2026 05:00:00 +0900</pubDate><description>天気：くもり
+降水確率：40%
+気温：八戸 最高9℃ 最低3℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item></channel></rss>

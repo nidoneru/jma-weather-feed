@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>天気予報フィード 北部</title><link>https://nidoneru.github.io/jma-weather-feed/#330020</link><description>気象庁の天気予報（北部）。出典：気象庁の天気予報データを加工して作成しています。</description><language>ja</language><lastBuildDate>Sun, 29 Nov 2026 02:11:34 +0900</lastBuildDate><item><title>北部 11月28日（土）くもり のち 雨 50%</title><link>https://nidoneru.github.io/jma-weather-feed/#330020</link><guid isPermaLink="false">330020-20261128</guid><pubDate>Sat, 28 Nov 2026 05:00:00 +0900</pubDate><description>天気：くもり のち 雨
+降水確率：18-24時 50%
+風：西の風
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>北部 11月29日（日）くもり一時雨か雪 11℃｜5℃ 50%</title><link>https://nidoneru.github.io/jma-weather-feed/#330020</link><guid isPermaLink="false">330020-20261129</guid><pubDate>Sun, 29 Nov 2026 05:00:00 +0900</pubDate><description>天気：くもり一時雨か雪
+降水確率：0-6時 50%｜6-12時 20%｜12-18時 20%｜18-24時 0%
+風：西の風
+気温：津山 最高11℃ 最低5℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>北部 11月30日（月）晴れ 13℃｜0℃</title><link>https://nidoneru.github.io/jma-weather-feed/#330020</link><guid isPermaLink="false">330020-20261130</guid><pubDate>Mon, 30 Nov 2026 05:00:00 +0900</pubDate><description>天気：晴れ
+風：西の風 後 南の風
+気温：津山 最高13℃ 最低0℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>北部 12月1日（火）晴れ 時々 くもり 17℃｜4℃ 30%</title><link>https://nidoneru.github.io/jma-weather-feed/#330020</link><guid isPermaLink="false">330020-20261201</guid><pubDate>Tue, 01 Dec 2026 05:00:00 +0900</pubDate><description>天気：晴れ 時々 くもり
+降水確率：30%
+気温：津山 最高17℃ 最低4℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>北部 12月2日（水）くもり 時々 晴れ 16℃｜6℃ 30%</title><link>https://nidoneru.github.io/jma-weather-feed/#330020</link><guid isPermaLink="false">330020-20261202</guid><pubDate>Wed, 02 Dec 2026 05:00:00 +0900</pubDate><description>天気：くもり 時々 晴れ
+降水確率：30%
+気温：津山 最高16℃ 最低6℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>北部 12月3日（木）くもり 一時 雨 15℃｜8℃ 50%</title><link>https://nidoneru.github.io/jma-weather-feed/#330020</link><guid isPermaLink="false">330020-20261203</guid><pubDate>Thu, 03 Dec 2026 05:00:00 +0900</pubDate><description>天気：くもり 一時 雨
+降水確率：50%
+気温：津山 最高15℃ 最低8℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>北部 12月4日（金）くもり 16℃｜8℃ 30%</title><link>https://nidoneru.github.io/jma-weather-feed/#330020</link><guid isPermaLink="false">330020-20261204</guid><pubDate>Fri, 04 Dec 2026 05:00:00 +0900</pubDate><description>天気：くもり
+降水確率：30%
+気温：津山 最高16℃ 最低8℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item></channel></rss>

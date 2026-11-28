@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>天気予報フィード 内陸</title><link>https://nidoneru.github.io/jma-weather-feed/#050020</link><description>気象庁の天気予報（内陸）。出典：気象庁の天気予報データを加工して作成しています。</description><language>ja</language><lastBuildDate>Sun, 29 Nov 2026 02:11:34 +0900</lastBuildDate><item><title>内陸 11月28日（土）雨 90%</title><link>https://nidoneru.github.io/jma-weather-feed/#050020</link><guid isPermaLink="false">050020-20261128</guid><pubDate>Sat, 28 Nov 2026 05:00:00 +0900</pubDate><description>天気：雨
+降水確率：18-24時 90%
+風：西の風 やや強く
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>内陸 11月29日（日）雪 時々止む 3℃｜2℃ 70%</title><link>https://nidoneru.github.io/jma-weather-feed/#050020</link><guid isPermaLink="false">050020-20261129</guid><pubDate>Sun, 29 Nov 2026 05:00:00 +0900</pubDate><description>天気：雪 時々止む
+降水確率：0-6時 70%｜6-12時 60%｜12-18時 60%｜18-24時 20%
+風：北西の風 後 西の風 やや強く
+気温：横手 最高3℃ 最低2℃｜鷹巣 最高4℃ 最低1℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>内陸 11月30日（月）くもり 一時 雨 13℃｜4℃</title><link>https://nidoneru.github.io/jma-weather-feed/#050020</link><guid isPermaLink="false">050020-20261130</guid><pubDate>Mon, 30 Nov 2026 05:00:00 +0900</pubDate><description>天気：くもり 一時 雨
+風：西の風
+気温：秋田 最高13℃ 最低4℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>内陸 12月1日（火）くもり 一時 雨 15℃｜6℃ 60%</title><link>https://nidoneru.github.io/jma-weather-feed/#050020</link><guid isPermaLink="false">050020-20261201</guid><pubDate>Tue, 01 Dec 2026 05:00:00 +0900</pubDate><description>天気：くもり 一時 雨
+降水確率：60%
+気温：秋田 最高15℃ 最低6℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>内陸 12月2日（水）晴れ 時々 くもり 10℃｜3℃ 20%</title><link>https://nidoneru.github.io/jma-weather-feed/#050020</link><guid isPermaLink="false">050020-20261202</guid><pubDate>Wed, 02 Dec 2026 05:00:00 +0900</pubDate><description>天気：晴れ 時々 くもり
+降水確率：20%
+気温：秋田 最高10℃ 最低3℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>内陸 12月3日（木）くもり 一時 雨 11℃｜2℃ 50%</title><link>https://nidoneru.github.io/jma-weather-feed/#050020</link><guid isPermaLink="false">050020-20261203</guid><pubDate>Thu, 03 Dec 2026 05:00:00 +0900</pubDate><description>天気：くもり 一時 雨
+降水確率：50%
+気温：秋田 最高11℃ 最低2℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item><item><title>内陸 12月4日（金）くもり 一時 雨 10℃｜4℃ 50%</title><link>https://nidoneru.github.io/jma-weather-feed/#050020</link><guid isPermaLink="false">050020-20261204</guid><pubDate>Fri, 04 Dec 2026 05:00:00 +0900</pubDate><description>天気：くもり 一時 雨
+降水確率：50%
+気温：秋田 最高10℃ 最低4℃
+出典：気象庁の天気予報データを加工して作成
+更新：2026年11月29日 2時11分</description></item></channel></rss>

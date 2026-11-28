@@ -1,0 +1,148 @@
+{
+ "area": {
+  "code": "017010",
+  "name": "渡島地方",
+  "office": "渡島・檜山地方"
+ },
+ "generated": "2026年11月29日 2時11分",
+ "source": "出典：気象庁の天気予報データを加工して作成",
+ "days": [
+  {
+   "date": "2026-11-28",
+   "kind": "short",
+   "weatherCode": "200",
+   "weather": "くもり",
+   "wind": "北西の風 海上 では 後 北西の風 強く",
+   "pops": [
+    {
+     "slot": "18-24時",
+     "value": 20
+    }
+   ],
+   "temps": []
+  },
+  {
+   "date": "2026-11-29",
+   "kind": "short",
+   "weatherCode": "204",
+   "weather": "くもり 一時 雪",
+   "wind": "北西の風 やや強く 後 西の風 やや強く 海上 では 西の風 強く",
+   "pops": [
+    {
+     "slot": "0-6時",
+     "value": 20
+    },
+    {
+     "slot": "6-12時",
+     "value": 30
+    },
+    {
+     "slot": "12-18時",
+     "value": 30
+    },
+    {
+     "slot": "18-24時",
+     "value": 20
+    }
+   ],
+   "temps": [
+    {
+     "point": "函館",
+     "min": -1,
+     "max": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-30",
+   "kind": "short",
+   "weatherCode": "202",
+   "weather": "くもり 一時 雨",
+   "wind": "西の風",
+   "pops": [],
+   "temps": [
+    {
+     "point": "函館",
+     "min": 0,
+     "max": 10
+    }
+   ]
+  },
+  {
+   "date": "2026-12-01",
+   "kind": "weekly",
+   "weatherCode": "202",
+   "weather": "くもり 一時 雨",
+   "wind": null,
+   "pops": [
+    {
+     "value": 50
+    }
+   ],
+   "temps": [
+    {
+     "point": "函館",
+     "min": 1,
+     "max": 12
+    }
+   ]
+  },
+  {
+   "date": "2026-12-02",
+   "kind": "weekly",
+   "weatherCode": "201",
+   "weather": "くもり 時々 晴れ",
+   "wind": null,
+   "pops": [
+    {
+     "value": 30
+    }
+   ],
+   "temps": [
+    {
+     "point": "函館",
+     "min": 0,
+     "max": 6
+    }
+   ]
+  },
+  {
+   "date": "2026-12-03",
+   "kind": "weekly",
+   "weatherCode": "206",
+   "weather": "くもり一時雨か雪",
+   "wind": null,
+   "pops": [
+    {
+     "value": 50
+    }
+   ],
+   "temps": [
+    {
+     "point": "函館",
+     "min": -1,
+     "max": 7
+    }
+   ]
+  },
+  {
+   "date": "2026-12-04",
+   "kind": "weekly",
+   "weatherCode": "206",
+   "weather": "くもり一時雨か雪",
+   "wind": null,
+   "pops": [
+    {
+     "value": 50
+    }
+   ],
+   "temps": [
+    {
+     "point": "函館",
+     "min": 0,
+     "max": 7
+    }
+   ]
+  }
+ ]
+}

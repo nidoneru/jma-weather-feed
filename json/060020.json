@@ -1,0 +1,148 @@
+{
+ "area": {
+  "code": "060020",
+  "name": "置賜",
+  "office": "山形県"
+ },
+ "generated": "2026年11月29日 2時11分",
+ "source": "出典：気象庁の天気予報データを加工して作成",
+ "days": [
+  {
+   "date": "2026-11-28",
+   "kind": "short",
+   "weatherCode": "300",
+   "weather": "雨",
+   "wind": "西の風",
+   "pops": [
+    {
+     "slot": "18-24時",
+     "value": 90
+    }
+   ],
+   "temps": []
+  },
+  {
+   "date": "2026-11-29",
+   "kind": "short",
+   "weatherCode": "304",
+   "weather": "雨か雪",
+   "wind": "西の風",
+   "pops": [
+    {
+     "slot": "0-6時",
+     "value": 90
+    },
+    {
+     "slot": "6-12時",
+     "value": 80
+    },
+    {
+     "slot": "12-18時",
+     "value": 80
+    },
+    {
+     "slot": "18-24時",
+     "value": 40
+    }
+   ],
+   "temps": [
+    {
+     "point": "米沢",
+     "min": 4,
+     "max": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-11-30",
+   "kind": "short",
+   "weatherCode": "201",
+   "weather": "くもり 時々 晴れ",
+   "wind": "西の風",
+   "pops": [],
+   "temps": [
+    {
+     "point": "山形",
+     "min": 2,
+     "max": 13
+    }
+   ]
+  },
+  {
+   "date": "2026-12-01",
+   "kind": "weekly",
+   "weatherCode": "202",
+   "weather": "くもり 一時 雨",
+   "wind": null,
+   "pops": [
+    {
+     "value": 60
+    }
+   ],
+   "temps": [
+    {
+     "point": "山形",
+     "min": 7,
+     "max": 16
+    }
+   ]
+  },
+  {
+   "date": "2026-12-02",
+   "kind": "weekly",
+   "weatherCode": "201",
+   "weather": "くもり 時々 晴れ",
+   "wind": null,
+   "pops": [
+    {
+     "value": 30
+    }
+   ],
+   "temps": [
+    {
+     "point": "山形",
+     "min": 3,
+     "max": 12
+    }
+   ]
+  },
+  {
+   "date": "2026-12-03",
+   "kind": "weekly",
+   "weatherCode": "202",
+   "weather": "くもり 一時 雨",
+   "wind": null,
+   "pops": [
+    {
+     "value": 50
+    }
+   ],
+   "temps": [
+    {
+     "point": "山形",
+     "min": 2,
+     "max": 12
+    }
+   ]
+  },
+  {
+   "date": "2026-12-04",
+   "kind": "weekly",
+   "weatherCode": "202",
+   "weather": "くもり 一時 雨",
+   "wind": null,
+   "pops": [
+    {
+     "value": 50
+    }
+   ],
+   "temps": [
+    {
+     "point": "山形",
+     "min": 4,
+     "max": 12
+    }
+   ]
+  }
+ ]
+}

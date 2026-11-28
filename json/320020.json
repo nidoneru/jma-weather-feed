@@ -1,0 +1,148 @@
+{
+ "area": {
+  "code": "320020",
+  "name": "西部",
+  "office": "島根県"
+ },
+ "generated": "2026年11月29日 2時11分",
+ "source": "出典：気象庁の天気予報データを加工して作成",
+ "days": [
+  {
+   "date": "2026-11-28",
+   "kind": "short",
+   "weatherCode": "214",
+   "weather": "くもり のち 雨",
+   "wind": "西の風 やや強く 後 北西の風 やや強く 海上 では 北西の風 強く",
+   "pops": [
+    {
+     "slot": "18-24時",
+     "value": 80
+    }
+   ],
+   "temps": []
+  },
+  {
+   "date": "2026-11-29",
+   "kind": "short",
+   "weatherCode": "202",
+   "weather": "くもり 一時 雨",
+   "wind": "北西の風 やや強く 後 西の風 海上 では 北西の風 強く",
+   "pops": [
+    {
+     "slot": "0-6時",
+     "value": 60
+    },
+    {
+     "slot": "6-12時",
+     "value": 20
+    },
+    {
+     "slot": "12-18時",
+     "value": 10
+    },
+    {
+     "slot": "18-24時",
+     "value": 0
+    }
+   ],
+   "temps": [
+    {
+     "point": "浜田",
+     "min": 8,
+     "max": 12
+    }
+   ]
+  },
+  {
+   "date": "2026-11-30",
+   "kind": "short",
+   "weatherCode": "100",
+   "weather": "晴れ",
+   "wind": "南の風",
+   "pops": [],
+   "temps": [
+    {
+     "point": "松江",
+     "min": 4,
+     "max": 17
+    }
+   ]
+  },
+  {
+   "date": "2026-12-01",
+   "kind": "weekly",
+   "weatherCode": "201",
+   "weather": "くもり 時々 晴れ",
+   "wind": null,
+   "pops": [
+    {
+     "value": 30
+    }
+   ],
+   "temps": [
+    {
+     "point": "松江",
+     "min": 10,
+     "max": 19
+    }
+   ]
+  },
+  {
+   "date": "2026-12-02",
+   "kind": "weekly",
+   "weatherCode": "201",
+   "weather": "くもり 時々 晴れ",
+   "wind": null,
+   "pops": [
+    {
+     "value": 30
+    }
+   ],
+   "temps": [
+    {
+     "point": "松江",
+     "min": 10,
+     "max": 19
+    }
+   ]
+  },
+  {
+   "date": "2026-12-03",
+   "kind": "weekly",
+   "weatherCode": "202",
+   "weather": "くもり 一時 雨",
+   "wind": null,
+   "pops": [
+    {
+     "value": 50
+    }
+   ],
+   "temps": [
+    {
+     "point": "松江",
+     "min": 10,
+     "max": 18
+    }
+   ]
+  },
+  {
+   "date": "2026-12-04",
+   "kind": "weekly",
+   "weatherCode": "200",
+   "weather": "くもり",
+   "wind": null,
+   "pops": [
+    {
+     "value": 30
+    }
+   ],
+   "temps": [
+    {
+     "point": "松江",
+     "min": 11,
+     "max": 19
+    }
+   ]
+  }
+ ]
+}

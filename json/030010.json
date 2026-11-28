@@ -1,0 +1,158 @@
+{
+ "area": {
+  "code": "030010",
+  "name": "内陸",
+  "office": "岩手県"
+ },
+ "generated": "2026年11月29日 2時11分",
+ "source": "出典：気象庁の天気予報データを加工して作成",
+ "days": [
+  {
+   "date": "2026-11-28",
+   "kind": "short",
+   "weatherCode": "200",
+   "weather": "くもり",
+   "wind": "西の風 やや強く",
+   "pops": [
+    {
+     "slot": "18-24時",
+     "value": 40
+    }
+   ],
+   "temps": []
+  },
+  {
+   "date": "2026-11-29",
+   "kind": "short",
+   "weatherCode": "200",
+   "weather": "くもり",
+   "wind": "西の風 やや強く",
+   "pops": [
+    {
+     "slot": "0-6時",
+     "value": 30
+    },
+    {
+     "slot": "6-12時",
+     "value": 20
+    },
+    {
+     "slot": "12-18時",
+     "value": 30
+    },
+    {
+     "slot": "18-24時",
+     "value": 20
+    }
+   ],
+   "temps": [
+    {
+     "point": "盛岡",
+     "min": 3,
+     "max": 5
+    },
+    {
+     "point": "二戸",
+     "min": 2,
+     "max": 4
+    },
+    {
+     "point": "一関",
+     "min": 4,
+     "max": 7
+    }
+   ]
+  },
+  {
+   "date": "2026-11-30",
+   "kind": "short",
+   "weatherCode": "202",
+   "weather": "くもり 一時 雨",
+   "wind": "南の風",
+   "pops": [],
+   "temps": [
+    {
+     "point": "盛岡",
+     "min": 1,
+     "max": 10
+    }
+   ]
+  },
+  {
+   "date": "2026-12-01",
+   "kind": "weekly",
+   "weatherCode": "202",
+   "weather": "くもり 一時 雨",
+   "wind": null,
+   "pops": [
+    {
+     "value": 60
+    }
+   ],
+   "temps": [
+    {
+     "point": "盛岡",
+     "min": 4,
+     "max": 13
+    }
+   ]
+  },
+  {
+   "date": "2026-12-02",
+   "kind": "weekly",
+   "weatherCode": "101",
+   "weather": "晴れ 時々 くもり",
+   "wind": null,
+   "pops": [
+    {
+     "value": 20
+    }
+   ],
+   "temps": [
+    {
+     "point": "盛岡",
+     "min": 1,
+     "max": 10
+    }
+   ]
+  },
+  {
+   "date": "2026-12-03",
+   "kind": "weekly",
+   "weatherCode": "200",
+   "weather": "くもり",
+   "wind": null,
+   "pops": [
+    {
+     "value": 30
+    }
+   ],
+   "temps": [
+    {
+     "point": "盛岡",
+     "min": 0,
+     "max": 9
+    }
+   ]
+  },
+  {
+   "date": "2026-12-04",
+   "kind": "weekly",
+   "weatherCode": "200",
+   "weather": "くもり",
+   "wind": null,
+   "pops": [
+    {
+     "value": 40
+    }
+   ],
+   "temps": [
+    {
+     "point": "盛岡",
+     "min": 2,
+     "max": 10
+    }
+   ]
+  }
+ ]
+}

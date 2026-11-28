@@ -1,0 +1,148 @@
+{
+ "area": {
+  "code": "013010",
+  "name": "網走地方",
+  "office": "網走・北見・紋別地方"
+ },
+ "generated": "2026年11月29日 2時11分",
+ "source": "出典：気象庁の天気予報データを加工して作成",
+ "days": [
+  {
+   "date": "2026-11-28",
+   "kind": "short",
+   "weatherCode": "302",
+   "weather": "雨 時々止む",
+   "wind": "北の風 後 北西の風 海上 では 後 北西の風 やや強く",
+   "pops": [
+    {
+     "slot": "18-24時",
+     "value": 50
+    }
+   ],
+   "temps": []
+  },
+  {
+   "date": "2026-11-29",
+   "kind": "short",
+   "weatherCode": "205",
+   "weather": "くもり 時々 雪",
+   "wind": "北西の風 やや強く 後 西の風 やや強く 海上 では 北西の風 強く",
+   "pops": [
+    {
+     "slot": "0-6時",
+     "value": 30
+    },
+    {
+     "slot": "6-12時",
+     "value": 50
+    },
+    {
+     "slot": "12-18時",
+     "value": 50
+    },
+    {
+     "slot": "18-24時",
+     "value": 10
+    }
+   ],
+   "temps": [
+    {
+     "point": "網走",
+     "min": 0,
+     "max": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-30",
+   "kind": "short",
+   "weatherCode": "201",
+   "weather": "くもり 時々 晴れ",
+   "wind": "西の風 後 南西の風",
+   "pops": [],
+   "temps": [
+    {
+     "point": "網走",
+     "min": -3,
+     "max": 6
+    }
+   ]
+  },
+  {
+   "date": "2026-12-01",
+   "kind": "weekly",
+   "weatherCode": "200",
+   "weather": "くもり",
+   "wind": null,
+   "pops": [
+    {
+     "value": 40
+    }
+   ],
+   "temps": [
+    {
+     "point": "網走",
+     "min": 0,
+     "max": 9
+    }
+   ]
+  },
+  {
+   "date": "2026-12-02",
+   "kind": "weekly",
+   "weatherCode": "201",
+   "weather": "くもり 時々 晴れ",
+   "wind": null,
+   "pops": [
+    {
+     "value": 30
+    }
+   ],
+   "temps": [
+    {
+     "point": "網走",
+     "min": -2,
+     "max": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-12-03",
+   "kind": "weekly",
+   "weatherCode": "201",
+   "weather": "くもり 時々 晴れ",
+   "wind": null,
+   "pops": [
+    {
+     "value": 30
+    }
+   ],
+   "temps": [
+    {
+     "point": "網走",
+     "min": -3,
+     "max": 4
+    }
+   ]
+  },
+  {
+   "date": "2026-12-04",
+   "kind": "weekly",
+   "weatherCode": "200",
+   "weather": "くもり",
+   "wind": null,
+   "pops": [
+    {
+     "value": 40
+    }
+   ],
+   "temps": [
+    {
+     "point": "網走",
+     "min": -3,
+     "max": 2
+    }
+   ]
+  }
+ ]
+}

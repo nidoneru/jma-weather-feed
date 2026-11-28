@@ -1,0 +1,148 @@
+{
+ "area": {
+  "code": "130020",
+  "name": "伊豆諸島北部",
+  "office": "東京都"
+ },
+ "generated": "2026年11月29日 2時11分",
+ "source": "出典：気象庁の天気予報データを加工して作成",
+ "days": [
+  {
+   "date": "2026-11-28",
+   "kind": "short",
+   "weatherCode": "211",
+   "weather": "くもり のち 晴れ",
+   "wind": "西の風 強く",
+   "pops": [
+    {
+     "slot": "18-24時",
+     "value": 20
+    }
+   ],
+   "temps": []
+  },
+  {
+   "date": "2026-11-29",
+   "kind": "short",
+   "weatherCode": "101",
+   "weather": "晴れ 時々 くもり",
+   "wind": "西の風 強く 後 北東の風",
+   "pops": [
+    {
+     "slot": "0-6時",
+     "value": 10
+    },
+    {
+     "slot": "6-12時",
+     "value": 20
+    },
+    {
+     "slot": "12-18時",
+     "value": 10
+    },
+    {
+     "slot": "18-24時",
+     "value": 0
+    }
+   ],
+   "temps": [
+    {
+     "point": "大島",
+     "min": 12,
+     "max": 17
+    }
+   ]
+  },
+  {
+   "date": "2026-11-30",
+   "kind": "short",
+   "weatherCode": "101",
+   "weather": "晴れ 時々 くもり",
+   "wind": "西の風 やや強く 後 南西の風 やや強く",
+   "pops": [],
+   "temps": [
+    {
+     "point": "大島",
+     "min": 8,
+     "max": 17
+    }
+   ]
+  },
+  {
+   "date": "2026-12-01",
+   "kind": "weekly",
+   "weatherCode": "101",
+   "weather": "晴れ 時々 くもり",
+   "wind": null,
+   "pops": [
+    {
+     "value": 20
+    }
+   ],
+   "temps": [
+    {
+     "point": "大島",
+     "min": 12,
+     "max": 20
+    }
+   ]
+  },
+  {
+   "date": "2026-12-02",
+   "kind": "weekly",
+   "weatherCode": "201",
+   "weather": "くもり 時々 晴れ",
+   "wind": null,
+   "pops": [
+    {
+     "value": 30
+    }
+   ],
+   "temps": [
+    {
+     "point": "大島",
+     "min": 11,
+     "max": 19
+    }
+   ]
+  },
+  {
+   "date": "2026-12-03",
+   "kind": "weekly",
+   "weatherCode": "201",
+   "weather": "くもり 時々 晴れ",
+   "wind": null,
+   "pops": [
+    {
+     "value": 30
+    }
+   ],
+   "temps": [
+    {
+     "point": "大島",
+     "min": 10,
+     "max": 18
+    }
+   ]
+  },
+  {
+   "date": "2026-12-04",
+   "kind": "weekly",
+   "weatherCode": "201",
+   "weather": "くもり 時々 晴れ",
+   "wind": null,
+   "pops": [
+    {
+     "value": 30
+    }
+   ],
+   "temps": [
+    {
+     "point": "大島",
+     "min": 11,
+     "max": 19
+    }
+   ]
+  }
+ ]
+}
