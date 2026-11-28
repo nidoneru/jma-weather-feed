@@ -584,14 +584,14 @@ def render_index(area, grouped, sample, generated_str):
 <p><strong>OPML</strong>：Outline Processor Markup Language の略。RSS フィードの一覧をまとめて受け渡すための形式で、このサイトでは全地点の RSS を予報区ごとのフォルダに分けて1ファイルにまとめている。RSS リーダーに読み込ませると、全地点を一度に登録できる。</p>
 <p><strong>JSON</strong>：JavaScript Object Notation の略。プログラムがデータを読み取るための形式で、このサイトでは天気・気温・降水確率などをそのまま配布している。アプリや AI などに取り込める。</p>
 </section>
-<h2 class="sec">参考リンク</h2>
+<h2 class="sec">参考リンク（気象庁）</h2>
 <section class="card">
 <ul>
-<li><a href="https://www.jma.go.jp/">気象庁ホームページ</a>：このサイトで配布しているデータの出典です</li>
-<li><a href="https://www.jma.go.jp/bosai/forecast/">天気予報（気象庁）</a>：地図から地域を選んで見る、公式の天気予報です</li>
-<li><a href="https://www.jma.go.jp/jma/kishou/know/yougo_hp/mokuji.html">予報用語（気象庁）</a>：「時々」「一時」など、天気予報で使う言葉の意味を解説しています</li>
-<li><a href="https://www.data.jma.go.jp/developer/index.html">気象庁情報カタログ</a>：気象庁が配信しているデータの一覧です</li>
-<li><a href="https://xml.kishou.go.jp/tec_material.html">防災情報XMLの技術資料（気象庁）</a>：気象庁が配信するXML電文の仕様資料です</li>
+<li><a href="https://www.jma.go.jp/bosai/forecast/">週間天気予報</a>：全国の予報の一覧表</li>
+<li><a href="https://www.jma.go.jp/jma/kishou/know/kurashi/twoweek.html">2週間気温予報と早期天候情報</a>：2週間先までの気温の見通しと、著しい高温・低温の見通しを解説</li>
+<li><a href="https://www.jma.go.jp/jma/kishou/know/yougo_hp/mokuji.html">予報用語</a>：「時々」「一時」など、天気予報で使う言葉の意味を解説</li>
+<li><a href="https://www.data.jma.go.jp/developer/index.html">気象庁情報カタログ</a>：気象庁が配信しているデータの一覧</li>
+<li><a href="https://xml.kishou.go.jp/tec_material.html">防災情報XMLの技術資料</a>：気象庁が配信するXML電文の仕様資料</li>
 </ul>
 </section>
 <script>(function(){{var u=['aegithalos','caudatus','japonicus'].join('');var a=u+String.fromCharCode(64)+['duck','com'].join('.');var s=document.getElementById('contact-mail');var l=document.createElement('a');l.href='mailto:'+a;l.textContent=a;s.textContent='';s.appendChild(l);}})();</script>
