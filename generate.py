@@ -397,7 +397,8 @@ a{color:var(--primary)}
 .region a{font-size:17px;font-weight:500;text-decoration:none}
 .region .members{color:var(--on-surface-variant);font-size:13px}
 .region .members a{font-size:13px;font-weight:400}
-.updated-when{font-size:26px;font-weight:700;text-decoration:underline;margin:2px 0 10px}
+.updated-when{display:inline-block;font-size:26px;font-weight:700;background:#f7e7b4;color:#1f1f1f;
+  padding:2px 12px;border-radius:8px;margin:2px 0 10px}
 .note-list{margin:14px 0}
 .gap{margin-top:14px}
 .at{width:.95em;height:.95em;vertical-align:-.15em}
